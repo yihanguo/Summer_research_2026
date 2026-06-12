@@ -190,6 +190,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One task instance in one of several interactive environments, such as web shopping, operating-system interaction, database work, games, house-holding, knowledge-graph reasoning, digital-card-game play, or lateral-thinking puzzles.
 - **Success signal:** Environment-specific success rate or task-completion score, often based on whether the final state or answer satisfies the task.
 - **Example:** The agent receives a web-shopping instruction such as finding a product with specified constraints, navigates the site, compares candidates, and submits the item that satisfies the user’s requirements.
+- **Quantified example:** AgentBench reports evaluation across 8 interactive environments. A concrete WebShop-style trial can be scored as `1/1` if the submitted product satisfies all constraints, so an agent that completes 34 of 100 sampled AgentBench tasks would have a 34% task success rate on that sample.
 
 ### 2. GAIA
 
@@ -197,6 +198,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One question with a short, unambiguous answer, usually requiring external information gathering and multi-step reasoning.
 - **Success signal:** Exact or normalized match to the gold answer.
 - **Example:** The assistant must identify a specific factual answer by searching the web, reading multiple sources, doing a small calculation or comparison, and returning a concise final value.
+- **Quantified example:** GAIA contains 466 questions. The paper reports a large human-model gap: humans reach about 92% while GPT-4 with plugins was reported around 15%; for a 20-question evaluation slice, this corresponds roughly to 18 correct human answers versus 3 correct model answers.
 
 ### 3. WebArena
 
@@ -204,6 +206,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One natural-language task in self-hosted websites modeled on common domains such as e-commerce, forums, collaborative software development, and content management.
 - **Success signal:** Functional correctness of task completion, usually checked through website state or environment-specific validators.
 - **Example:** The agent is asked to edit an issue, post a comment, configure a setting, buy an item, or find information inside a hosted web application.
+- **Quantified example:** WebArena contains 812 long-horizon tasks. The paper reports a best GPT-4-based agent success rate of 14.41% versus 78.24% for humans; on the full 812-task set, those rates correspond to about 117 agent successes versus about 635 human successes.
 
 ### 4. VisualWebArena
 
@@ -211,6 +214,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One web task requiring image-text perception, visual grounding, instruction interpretation, and browser actions.
 - **Success signal:** Whether the final web state satisfies the user objective.
 - **Example:** The agent must use visual cues on a product page or content-management interface, identify the correct item or control, and complete a web action that cannot be solved reliably from text alone.
+- **Quantified example:** The survey table lists VisualWebArena at 910 tasks. A representative visual task can be binary-scored: if the agent selects the visually correct product among 6 image-similar candidates and submits the target item, it receives `1`; otherwise `0`. Solving 182 of 910 tasks would equal a 20.0% success rate.
 
 ### 5. Mind2Web
 
@@ -218,6 +222,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One open-ended web task with a recorded crowdsourced action sequence on a real website.
 - **Success signal:** Element selection accuracy, action prediction accuracy, and task-level trajectory matching against the reference action sequence.
 - **Example:** Given “find the refund policy for this order” on a real e-commerce site, the model must choose the correct page elements and actions in sequence.
+- **Quantified example:** Mind2Web contains over 2,000 tasks; the survey table reports 2,350 tasks. If a task’s reference trace has 8 actions and the model selects the correct element/action pair for 6 of them, a step-level trajectory score would be 75% for that instance, even if task-level success remains `0` because the final page state is wrong.
 
 ### 6. OSWorld
 
@@ -225,6 +230,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One desktop-computer task with an initial machine state, executable environment, and evaluation script.
 - **Success signal:** Execution-based verification of the final computer state.
 - **Example:** The agent opens desktop apps, manipulates files, uses a browser or office application, and leaves the system in a target state checked by a script.
+- **Quantified example:** OSWorld contains 369 real-computer tasks. The paper reports humans at 72.36% and the best evaluated model at 12.24%; on all 369 tasks, that is roughly 267 human successes versus 45 model successes.
 
 ### 7. AndroidWorld
 
@@ -232,6 +238,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One parameterized natural-language task over real Android apps, with initialization, success-checking, and teardown logic.
 - **Success signal:** Programmatic inspection of the Android device or app state after execution.
 - **Example:** The agent receives a task such as creating a calendar event, sending or editing app content, changing a setting, or retrieving information from an Android app.
+- **Quantified example:** AndroidWorld provides 116 programmatic tasks across 20 Android apps. The paper reports a best baseline success rate of 30.6%; on the 116-task suite, that is about 35 completed tasks.
 
 ### 8. SWE-bench
 
@@ -239,6 +246,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One GitHub issue paired with a repository snapshot, where the agent must edit the codebase.
 - **Success signal:** The generated patch passes the benchmark’s hidden or provided tests for that issue.
 - **Example:** The agent reads a bug report from a Python project, modifies multiple files if needed, and produces a patch that fixes the failing behavior.
+- **Quantified example:** SWE-bench contains 2,294 real GitHub issues from 12 Python repositories. A single instance is binary-scored by tests: if the agent’s patch makes 5 previously failing issue-specific tests pass without breaking regression tests, it receives `1`; otherwise `0`.
 
 ### 9. MLE-bench
 
@@ -246,6 +254,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One ML competition task requiring data preparation, modeling, experiment execution, and submission generation.
 - **Success signal:** Competition score compared with Kaggle leaderboard baselines, such as whether the agent reaches a medal-level threshold.
 - **Example:** The agent receives a tabular prediction competition, writes training/evaluation code, runs experiments, and submits predictions for scoring.
+- **Quantified example:** MLE-bench curates 75 Kaggle competitions. The paper reports that the best evaluated setup reached at least a Kaggle bronze-medal level in 16.9% of competitions, which is about 13 of 75 tasks.
 
 ### 10. PaperBench
 
@@ -253,6 +262,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One ICML 2024 Spotlight or Oral paper replication task, decomposed into many rubric-graded subtasks.
 - **Success signal:** Hierarchical rubric score over paper understanding, codebase implementation, experiment execution, and result reproduction.
 - **Example:** The agent reads a paper, implements the described method, runs experiments, produces outputs, and is graded against author-informed replication criteria.
+- **Quantified example:** PaperBench covers 20 ICML 2024 Spotlight/Oral papers and 8,316 individually gradable rubric items. If a replication attempt earns 420 of 1,000 available rubric points for one paper, its replication score for that paper is 42.0%.
 
 ### 11. ToolBench
 
@@ -260,6 +270,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One instruction that may require one or more API calls, together with available API documentation and expected solution path behavior.
 - **Success signal:** Tool-use success as judged by ToolEval or related automatic evaluation, including whether the selected API sequence solves the instruction.
 - **Example:** The agent is asked to retrieve travel, finance, weather, or media information by choosing relevant APIs and chaining their outputs.
+- **Quantified example:** ToolBench is built from 16,464 real-world RESTful APIs across 49 categories. For a 3-call instruction, an agent can be judged successful only if it selects the right API chain and passes the required intermediate outputs, such as `search_flights -> get_fare_rules -> book_ticket`.
 
 ### 12. BFCL
 
@@ -267,6 +278,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One prompt plus function schema or tool specification, where the model must output the appropriate function call or calls.
 - **Success signal:** AST-level matching, executable correctness, or response comparison depending on the test category.
 - **Example:** Given a set of functions for flights, hotels, or database queries, the model outputs the exact function name and JSON-style arguments needed to satisfy the user request.
+- **Quantified example:** A BFCL-style single-call item can require one exact function name plus 4 arguments. If the model outputs the correct function and 3 of 4 arguments, AST matching still typically marks the call incorrect because the structured call must match the reference constraints exactly.
 
 ### 13. AppWorld
 
@@ -274,6 +286,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One natural-language digital task in an app ecosystem with APIs, app state, users, and executable code.
 - **Success signal:** Programmatic state-based unit tests that check both successful completion and absence of unintended collateral changes.
 - **Example:** The agent writes and runs code that coordinates notes, shopping, messaging, or calendar APIs to complete a household or office task.
+- **Quantified example:** AppWorld includes 9 everyday apps, 457 APIs, about 100 fictitious users, and 750 tasks. A task might have 6 state-based unit tests; if the agent updates the target calendar event but also changes an unrelated contact, it may pass 5 functional tests but fail the collateral-damage check and receive no full task credit.
 
 ### 14. tau-bench
 
@@ -281,6 +294,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One simulated user conversation in a domain such as retail or airline service, where the agent must talk to the user and call tools.
 - **Success signal:** Final database state compared with the annotated goal state; repeated-trial reliability can be measured with pass^k.
 - **Example:** The agent handles a flight-change or refund request by asking the user for missing information, applying policy rules, and updating backend state through tools.
+- **Quantified example:** tau-bench reports that even strong function-calling agents can score below 50% pass@1 and below 25% pass^8 in retail. In a refund task, the final database might need exactly 3 fields changed, such as `refund_status`, `refund_amount`, and `order_note`; one incorrect field makes the state mismatch fail.
 
 ### 15. LongMemEval
 
@@ -288,6 +302,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One question embedded in a scalable multi-session chat history.
 - **Success signal:** Accuracy on memory-dependent answers, including information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention.
 - **Example:** After many sessions, the assistant must answer a question about a user preference that changed over time and avoid using outdated information.
+- **Quantified example:** LongMemEval contains 500 curated questions over long chat histories. If a user first says “I live in Boston” and 12 sessions later says “I moved to Seattle,” a correct answer to “Which city should you use for my weather?” must use the newer Seattle fact; using Boston is scored incorrect.
 
 ### 16. MemoryAgentBench
 
@@ -295,6 +310,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One multi-turn memory scenario transformed from long-context or newly constructed datasets into incremental interaction form.
 - **Success signal:** Task accuracy over the four memory competencies, often under different memory-system designs such as context-only, RAG, external memory, or tool-integrated agents.
 - **Example:** The agent gradually receives information over turns, later must retrieve the relevant fact, incorporate newly learned information, and ignore obsolete or irrelevant memory.
+- **Quantified example:** MemoryAgentBench evaluates 4 core memory competencies: accurate retrieval, test-time learning, long-range understanding, and selective forgetting. A quantified selective-forgetting item can present 5 stored facts, mark 2 as obsolete, and require the agent to answer using only the remaining 3 active facts.
 
 ### 17. LLM-Coordination
 
@@ -302,6 +318,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** Either one agentic coordination episode in a game or one multiple-choice coordination QA item.
 - **Success signal:** Game reward/success for agentic coordination, and QA accuracy over environment comprehension, theory-of-mind reasoning, and joint planning.
 - **Example:** Two agents must infer a partner’s likely intent in a cooperative game such as Overcooked-style coordination and choose complementary actions without explicit centralized control.
+- **Quantified example:** LLM-Coordination includes 4 pure coordination games and 198 multiple-choice coordination-QA questions. If an agent answers 139 of the 198 QA items correctly, its coordination-QA accuracy is 70.2%.
 
 ### 18. MultiAgentBench
 
@@ -309,6 +326,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One multi-agent task scenario, such as research, coding, database analysis, bargaining, or social deduction.
 - **Success signal:** Milestone-based KPIs, task score, communication score, planning score, coordination score, or competition outcome depending on the task.
 - **Example:** A team of specialized agents must complete a research-analysis task, exchange intermediate findings, coordinate roles, and produce a final artifact scored by milestone completion.
+- **Quantified example:** MultiAgentBench evaluates coordination protocols such as star, chain, tree, and graph topologies. The paper reports that cognitive planning improves milestone achievement by 3%; for a 100-milestone evaluation pool, that corresponds to 3 additional completed milestones.
 
 ### 19. Who&When
 
@@ -316,6 +334,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One failed multi-agent execution log with fine-grained annotations linking the failure to a responsible agent and error step.
 - **Success signal:** Accuracy in identifying the failure-responsible agent and the decisive failure step.
 - **Example:** Given a failed multi-agent task transcript, the attribution model must identify that the planner agent made the first harmful decomposition at step 4 rather than blaming a later executor that merely propagated the error.
+- **Quantified example:** Who&When contains failure logs from 127 LLM multi-agent systems. The paper reports the best method at 53.5% accuracy for responsible-agent identification but only 14.2% for failure-step localization; on 100 failed logs, that is about 54 correct “who” predictions but only 14 correct “when” predictions.
 
 ### 20. AgentHarm
 
@@ -323,6 +342,7 @@ This section gives operational definitions for 20 representative and commonly us
 - **Evaluation unit:** One malicious agentic request, often with augmented jailbreak variants, spanning harm categories such as cybercrime, fraud, or harassment.
 - **Success signal:** Whether the agent refuses harmful requests, and whether a jailbroken agent maintains enough capability to complete the harmful multi-step task.
 - **Example:** The benchmark presents a harmful tool-enabled request and checks whether the agent refuses rather than using tools to carry out the malicious objective.
+- **Quantified example:** AgentHarm includes 110 malicious agent tasks, expanded to 440 with augmentations, across 11 harm categories. If a model refuses 396 of 440 augmented requests, its refusal rate is 90%; if it completes 22 harmful tasks, its harmful-completion rate is 5%.
 
 ## Source Links for Top 20 Definitions
 
