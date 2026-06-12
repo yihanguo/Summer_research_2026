@@ -180,3 +180,169 @@ Self-evolution is less standardized than single-agent or collaboration evaluatio
 3. Use the **Benchmark Selection Guide** to match future project ideas to evaluation suites.
 4. Close with the **Cross-Benchmark Gaps** section, because those gaps are the most natural places to propose new research directions.
 
+## Top 20 Representative Benchmark Definitions
+
+This section gives operational definitions for 20 representative and commonly used benchmarks from the survey table. “Definition” states what the benchmark is designed to measure; “evaluation unit” states what one test instance looks like; “success signal” states how a run is judged; and “example” gives a concrete task shape.
+
+### 1. AgentBench
+
+- **Definition:** AgentBench is a multi-environment benchmark for evaluating LLMs as autonomous agents in interactive, multi-turn settings, especially their reasoning, decision-making, instruction following, and long-horizon action ability.
+- **Evaluation unit:** One task instance in one of several interactive environments, such as web shopping, operating-system interaction, database work, games, house-holding, knowledge-graph reasoning, digital-card-game play, or lateral-thinking puzzles.
+- **Success signal:** Environment-specific success rate or task-completion score, often based on whether the final state or answer satisfies the task.
+- **Example:** The agent receives a web-shopping instruction such as finding a product with specified constraints, navigates the site, compares candidates, and submits the item that satisfies the user’s requirements.
+
+### 2. GAIA
+
+- **Definition:** GAIA is a benchmark for general AI assistants, built from real-world questions that require robust combinations of reasoning, web browsing, multimodal interpretation, and tool use.
+- **Evaluation unit:** One question with a short, unambiguous answer, usually requiring external information gathering and multi-step reasoning.
+- **Success signal:** Exact or normalized match to the gold answer.
+- **Example:** The assistant must identify a specific factual answer by searching the web, reading multiple sources, doing a small calculation or comparison, and returning a concise final value.
+
+### 3. WebArena
+
+- **Definition:** WebArena is a realistic and reproducible web environment for evaluating language-guided agents on long-horizon website tasks.
+- **Evaluation unit:** One natural-language task in self-hosted websites modeled on common domains such as e-commerce, forums, collaborative software development, and content management.
+- **Success signal:** Functional correctness of task completion, usually checked through website state or environment-specific validators.
+- **Example:** The agent is asked to edit an issue, post a comment, configure a setting, buy an item, or find information inside a hosted web application.
+
+### 4. VisualWebArena
+
+- **Definition:** VisualWebArena extends realistic web-agent evaluation to visually grounded tasks where text-only page representations are insufficient.
+- **Evaluation unit:** One web task requiring image-text perception, visual grounding, instruction interpretation, and browser actions.
+- **Success signal:** Whether the final web state satisfies the user objective.
+- **Example:** The agent must use visual cues on a product page or content-management interface, identify the correct item or control, and complete a web action that cannot be solved reliably from text alone.
+
+### 5. Mind2Web
+
+- **Definition:** Mind2Web is a dataset and benchmark for training and evaluating generalist web agents that follow language instructions on real websites across many domains.
+- **Evaluation unit:** One open-ended web task with a recorded crowdsourced action sequence on a real website.
+- **Success signal:** Element selection accuracy, action prediction accuracy, and task-level trajectory matching against the reference action sequence.
+- **Example:** Given “find the refund policy for this order” on a real e-commerce site, the model must choose the correct page elements and actions in sequence.
+
+### 6. OSWorld
+
+- **Definition:** OSWorld is a scalable real-computer benchmark for multimodal agents performing open-ended tasks across operating systems and desktop applications.
+- **Evaluation unit:** One desktop-computer task with an initial machine state, executable environment, and evaluation script.
+- **Success signal:** Execution-based verification of the final computer state.
+- **Example:** The agent opens desktop apps, manipulates files, uses a browser or office application, and leaves the system in a target state checked by a script.
+
+### 7. AndroidWorld
+
+- **Definition:** AndroidWorld is a dynamic benchmark environment for autonomous agents controlling Android devices and apps.
+- **Evaluation unit:** One parameterized natural-language task over real Android apps, with initialization, success-checking, and teardown logic.
+- **Success signal:** Programmatic inspection of the Android device or app state after execution.
+- **Example:** The agent receives a task such as creating a calendar event, sending or editing app content, changing a setting, or retrieving information from an Android app.
+
+### 8. SWE-bench
+
+- **Definition:** SWE-bench is an evaluation framework for testing whether language-model agents can resolve real-world software-engineering issues.
+- **Evaluation unit:** One GitHub issue paired with a repository snapshot, where the agent must edit the codebase.
+- **Success signal:** The generated patch passes the benchmark’s hidden or provided tests for that issue.
+- **Example:** The agent reads a bug report from a Python project, modifies multiple files if needed, and produces a patch that fixes the failing behavior.
+
+### 9. MLE-bench
+
+- **Definition:** MLE-bench evaluates AI agents on machine-learning engineering tasks derived from Kaggle competitions.
+- **Evaluation unit:** One ML competition task requiring data preparation, modeling, experiment execution, and submission generation.
+- **Success signal:** Competition score compared with Kaggle leaderboard baselines, such as whether the agent reaches a medal-level threshold.
+- **Example:** The agent receives a tabular prediction competition, writes training/evaluation code, runs experiments, and submits predictions for scoring.
+
+### 10. PaperBench
+
+- **Definition:** PaperBench evaluates whether AI agents can replicate modern AI research papers from scratch.
+- **Evaluation unit:** One ICML 2024 Spotlight or Oral paper replication task, decomposed into many rubric-graded subtasks.
+- **Success signal:** Hierarchical rubric score over paper understanding, codebase implementation, experiment execution, and result reproduction.
+- **Example:** The agent reads a paper, implements the described method, runs experiments, produces outputs, and is graded against author-informed replication criteria.
+
+### 11. ToolBench
+
+- **Definition:** ToolBench is a large-scale tool-use benchmark/dataset built around real-world APIs, designed to evaluate whether LLMs can select and compose tools to satisfy instructions.
+- **Evaluation unit:** One instruction that may require one or more API calls, together with available API documentation and expected solution path behavior.
+- **Success signal:** Tool-use success as judged by ToolEval or related automatic evaluation, including whether the selected API sequence solves the instruction.
+- **Example:** The agent is asked to retrieve travel, finance, weather, or media information by choosing relevant APIs and chaining their outputs.
+
+### 12. BFCL
+
+- **Definition:** BFCL, the Berkeley Function-Calling Leaderboard, evaluates structured function-calling ability: selecting the correct function, producing valid arguments, and handling calls across languages and invocation formats.
+- **Evaluation unit:** One prompt plus function schema or tool specification, where the model must output the appropriate function call or calls.
+- **Success signal:** AST-level matching, executable correctness, or response comparison depending on the test category.
+- **Example:** Given a set of functions for flights, hotels, or database queries, the model outputs the exact function name and JSON-style arguments needed to satisfy the user request.
+
+### 13. AppWorld
+
+- **Definition:** AppWorld is a controllable execution environment and benchmark for interactive coding agents operating over multiple simulated everyday apps and APIs.
+- **Evaluation unit:** One natural-language digital task in an app ecosystem with APIs, app state, users, and executable code.
+- **Success signal:** Programmatic state-based unit tests that check both successful completion and absence of unintended collateral changes.
+- **Example:** The agent writes and runs code that coordinates notes, shopping, messaging, or calendar APIs to complete a household or office task.
+
+### 14. tau-bench
+
+- **Definition:** tau-bench evaluates tool-using agents in realistic user-agent conversations governed by domain policies and API-backed state.
+- **Evaluation unit:** One simulated user conversation in a domain such as retail or airline service, where the agent must talk to the user and call tools.
+- **Success signal:** Final database state compared with the annotated goal state; repeated-trial reliability can be measured with pass^k.
+- **Example:** The agent handles a flight-change or refund request by asking the user for missing information, applying policy rules, and updating backend state through tools.
+
+### 15. LongMemEval
+
+- **Definition:** LongMemEval evaluates long-term interactive memory in chat assistants across sustained user-assistant histories.
+- **Evaluation unit:** One question embedded in a scalable multi-session chat history.
+- **Success signal:** Accuracy on memory-dependent answers, including information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention.
+- **Example:** After many sessions, the assistant must answer a question about a user preference that changed over time and avoid using outdated information.
+
+### 16. MemoryAgentBench
+
+- **Definition:** MemoryAgentBench evaluates memory agents in incremental multi-turn interactions, focusing on accurate retrieval, test-time learning, long-range understanding, and selective forgetting.
+- **Evaluation unit:** One multi-turn memory scenario transformed from long-context or newly constructed datasets into incremental interaction form.
+- **Success signal:** Task accuracy over the four memory competencies, often under different memory-system designs such as context-only, RAG, external memory, or tool-integrated agents.
+- **Example:** The agent gradually receives information over turns, later must retrieve the relevant fact, incorporate newly learned information, and ignore obsolete or irrelevant memory.
+
+### 17. LLM-Coordination
+
+- **Definition:** LLM-Coordination evaluates coordination abilities of LLM agents in pure coordination games and coordination-question-answering settings.
+- **Evaluation unit:** Either one agentic coordination episode in a game or one multiple-choice coordination QA item.
+- **Success signal:** Game reward/success for agentic coordination, and QA accuracy over environment comprehension, theory-of-mind reasoning, and joint planning.
+- **Example:** Two agents must infer a partner’s likely intent in a cooperative game such as Overcooked-style coordination and choose complementary actions without explicit centralized control.
+
+### 18. MultiAgentBench
+
+- **Definition:** MultiAgentBench evaluates LLM-based multi-agent systems across collaboration and competition scenarios, with explicit attention to orchestration, communication, planning, and milestone progress.
+- **Evaluation unit:** One multi-agent task scenario, such as research, coding, database analysis, bargaining, or social deduction.
+- **Success signal:** Milestone-based KPIs, task score, communication score, planning score, coordination score, or competition outcome depending on the task.
+- **Example:** A team of specialized agents must complete a research-analysis task, exchange intermediate findings, coordinate roles, and produce a final artifact scored by milestone completion.
+
+### 19. Who&When
+
+- **Definition:** Who&When is a failure-attribution dataset and benchmark for LLM multi-agent systems, asking which agent caused a task failure and at which decisive step.
+- **Evaluation unit:** One failed multi-agent execution log with fine-grained annotations linking the failure to a responsible agent and error step.
+- **Success signal:** Accuracy in identifying the failure-responsible agent and the decisive failure step.
+- **Example:** Given a failed multi-agent task transcript, the attribution model must identify that the planner agent made the first harmful decomposition at step 4 rather than blaming a later executor that merely propagated the error.
+
+### 20. AgentHarm
+
+- **Definition:** AgentHarm measures harmfulness and jailbreak robustness for LLM agents that can use tools and execute multi-stage tasks.
+- **Evaluation unit:** One malicious agentic request, often with augmented jailbreak variants, spanning harm categories such as cybercrime, fraud, or harassment.
+- **Success signal:** Whether the agent refuses harmful requests, and whether a jailbroken agent maintains enough capability to complete the harmful multi-step task.
+- **Example:** The benchmark presents a harmful tool-enabled request and checks whether the agent refuses rather than using tools to carry out the malicious objective.
+
+## Source Links for Top 20 Definitions
+
+- AgentBench: https://arxiv.org/abs/2308.03688
+- GAIA: https://arxiv.org/abs/2311.12983
+- WebArena: https://arxiv.org/abs/2307.13854
+- VisualWebArena: https://arxiv.org/abs/2401.13649
+- Mind2Web: https://arxiv.org/abs/2306.06070
+- OSWorld: https://arxiv.org/abs/2404.07972
+- AndroidWorld: https://arxiv.org/abs/2405.14573
+- SWE-bench: https://arxiv.org/abs/2310.06770
+- MLE-bench: https://arxiv.org/abs/2410.07095
+- PaperBench: https://arxiv.org/abs/2504.01848
+- ToolBench / ToolLLM: https://arxiv.org/abs/2307.16789
+- BFCL: https://gorilla.cs.berkeley.edu/leaderboard.html
+- AppWorld: https://arxiv.org/abs/2407.18901
+- tau-bench: https://arxiv.org/abs/2406.12045
+- LongMemEval: https://arxiv.org/abs/2410.10813
+- MemoryAgentBench: https://arxiv.org/abs/2507.05257
+- LLM-Coordination: https://arxiv.org/abs/2310.03903
+- MultiAgentBench: https://arxiv.org/abs/2503.01935
+- Who&When: https://arxiv.org/abs/2505.00212
+- AgentHarm: https://arxiv.org/abs/2410.09024
