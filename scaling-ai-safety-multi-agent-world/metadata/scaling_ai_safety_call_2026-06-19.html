@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html
+	aria-label="SurveyMonkey Apply"
+	lang="en"
+	class=""
+	data-software-version="6"
+	
+>
+	<head>
+		<title>
+			Scaling AI Safety for a Multi-Agent World - Schmidt Sciences
+
+		</title>
+
+		
+		<script type="text/javascript" src="/jsi18n/?c=en"></script>
+		
+
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+		<script type="text/javascript">
+			var formatNumber = '0';
+			var dateFormat;
+			if (formatNumber === '0') {
+				dateFormat = 'MMM d y';
+			} else if (formatNumber === '1') {
+				dateFormat = 'd MMM y';
+			} else if (formatNumber === '2') {
+				dateFormat = 'y MMM d';
+			}
+
+
+			MEDIA_URL = '/media/';
+			window.recaptchaOptions = {
+			  useRecaptchaNet: true,
+			};
+			window.__LANGUAGE = 'en';
+			window.__DEFAULT_LANGUAGE = 'en';
+			window.__EDIT_LANGUAGE = 'en';
+			window.__LANGUAGES = [];
+			
+			window.__LANGUAGES.push(['en', 'English (US)']);
+			
+			window.__IS_ORG_SITE = false;
+			
+			
+		</script>
+		<script src="//d1cql2tvuevqx5.cloudfront.net/media/c/bundles/sma.common-56d3bbbef95267beff4b.js" ></script> 
+
+		<script id="fr-fek">
+			try {
+				(function (k) {
+					localStorage.FEK = k;
+					t = document.getElementById("fr-fek");
+					t.parentNode.removeChild(t);
+				})("6Ud1QBRVCDLPAZMBQ==");
+			} catch (e) {}
+		</script>
+
+		  
+		<link rel="shortcut icon" href="/media/img/smapply/favicon.png" />
+		    
+	
+	<script src="//d1cql2tvuevqx5.cloudfront.net/media/c/bundles/vendor-9144c78c75f74cd7e49c.js" ></script>
+	<script src="//d1cql2tvuevqx5.cloudfront.net/media/c/bundles/sma.common-56d3bbbef95267beff4b.js" ></script>
+	<script src="//d1cql2tvuevqx5.cloudfront.net/media/c/bundles/sma.applicant-b71fef1eb34bce9f43d3.js" ></script>
+
+	<script>
+		var TIME_FORMAT = '0';
+		var DATE_FORMAT = '0';
+	</script>
+
+	<script language="javascript">
+		$(function() {
+			new sma.programs.ProgramDetailView({
+				applications: [],
+				name_required: false,
+				name_instructions: ""
+			});
+		});
+	</script>
+  
+	<link href="//d1cql2tvuevqx5.cloudfront.net/media/c/bundles/vendor-6a38ede32dd79d7c3082.css" rel="stylesheet" />
+	<link href="//d1cql2tvuevqx5.cloudfront.net/media/c/bundles/sma.common-1df6ea763870cd1e503a.css" rel="stylesheet" />
+	<link href="//d1cql2tvuevqx5.cloudfront.net/media/c/bundles/sma.applicant-130a7555ecbf14805c6c.css" rel="stylesheet" />
+
+	
+		<script src="//d1cql2tvuevqx5.cloudfront.net/media/c/bundles/theme-default-5551ad0ee87b4298d2a3.js" ></script>
+<link href="//d1cql2tvuevqx5.cloudfront.net/media/c/bundles/theme-default-4dc33342478558d912ef.css" rel="stylesheet" />
+	
+
+	
+ 
+		<script type="text/javascript">
+				if (typeof jQuery !== 'undefined') {
+					jQuery.fn.andSelf = jQuery.fn.addBack;
+					jQuery.extend(jQuery.expr[':'], {
+						tabbable: function(el, index, selector){
+							return $(el).is('a, button, :input, [tabindex]');
+						}
+					});
+				}
+
+				
+
+				function track(eventId, eventProperties) {
+					
+						if (eventProperties === undefined)
+							eventProperties = {};
+						eventProperties.siteSlug = 'schmidtsciences';
+						
+							eventProperties.userAge = null;
+						
+						eventProperties.pageName = 'program-profile';
+						eventProperties.role = '';
+						eventProperties.packageName = 'SMApply Enterprise (2017)';
+						sma.amplitude.track(eventId, eventProperties);
+				
+			}
+
+			// Make track function globally available
+			window.track = track;
+		</script>
+
+		  
+	<script>
+    document.documentElement.setAttribute("data-fides-style", 'smapply');
+	window.fides_overrides = {};
+    
+	window.fides_overrides.fides_locale = 'en';
+	window.ot_fides_mapping = encodeURIComponent(JSON.stringify({
+		"C0001": ["essential"],
+ 		"C0003": ["functional"],
+		"C0004": ["marketing"]
+	}));
+</script>
+<script src="https://www.surveymonkey.com/fides.js" id="fides-code" async></script>
+<script>
+    var cookiesByNoticeKey = {};
+    var previousConsent = {};
+
+
+    function deleteCookie(cookieName) {
+        const paths = ["/"];
+        paths.forEach(path => {
+            // Delete the cookie by original implementation
+            document.cookieSetter(`${cookieName}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=${path}`);
+        });
+    }
+
+    function updateConsentSettings() {
+        // Ensure Fides.consent exists
+        if (!Fides.consent) {
+            console.warn("Fides.consent is missing, blocking all cookies.");
+            return;
+        }
+
+        // Get current cookies from document.cookie
+        const currentCookies = new Set(document.cookie.split("; ").map(cookie => cookie.split("=")[0]));
+
+        // Detect revoked consents (categories that were previously `true` but now `false`)
+        for (const [noticeKey, wasConsented] of Object.entries(previousConsent)) {
+            if (wasConsented && !Fides.consent[noticeKey]) {
+                // Find and delete only cookies that are currently present
+                (cookiesByNoticeKey[noticeKey] || []).forEach(cookieName => {
+                    if (currentCookies.has(cookieName)) {
+                        deleteCookie(cookieName);
+                    }
+                });
+                if (noticeKey === "functional") {
+                    removeGA();
+                }
+            }
+        }
+
+        // Save the latest consent state
+        previousConsent = {...Fides.consent};
+        enforceCookieSetter();
+    }
+
+    function isCookieAllowed(cookieName) {
+        // Ensure Fides.consent exists
+        if (!Fides.consent) {
+            console.warn("Fides.consent is missing, blocking all cookies.");
+            return false;
+        }
+
+        // Headless mode: Check if all notice groups are allowed
+        if (!Fides.experience?.privacy_notices) {
+            return Object.values(Fides.consent).every(value => value === true);
+        }
+
+        // Check if the cookie belongs to a consented notice_key
+        for (const [noticeKey, isConsented] of Object.entries(Fides.consent)) {
+            if (isConsented && cookiesByNoticeKey[noticeKey]?.has(cookieName)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    function setCookie(cookie) {
+        if (!cookie) return;
+
+        const cookieArr = cookie.split("=");
+        if (!cookieArr.length) return;
+
+        const cookieName = cookieArr[0].trim();
+
+        // Check consent before setting the cookie
+        if (!isCookieAllowed(cookieName)) return;
+
+        // Set the cookie using the original JavaScript setter
+        document.cookieSetter(cookie);
+    }
+
+    function enforceCookieSetter() {
+        document.__defineSetter__("cookie", setCookie);
+        document.__defineGetter__("cookie", document.cookieGetter);
+    }
+
+    // Listen for Fides consent updates
+    window.addEventListener("FidesUpdated", (evt) => {
+        // Update consent settings when preferences change
+        updateConsentSettings();
+    });
+
+
+    // Listen for when Fides is fully initialized
+    window.addEventListener("FidesInitialized", () => {
+		console.log('FidesInitialized');
+        if (!document.coookieSetter) {
+            document.cookieSetter = Object.getOwnPropertyDescriptor(Document.prototype, "cookie").set;
+            document.cookieGetter = Object.getOwnPropertyDescriptor(Document.prototype, "cookie").get;
+       }
+
+        const experienceConfigName = Fides?.experience?.experience_config?.name;
+        if (experienceConfigName) {
+          document.body.classList.add(experienceConfigName);
+        }
+
+		// Create a mapping of cookies grouped by notice_key
+        // Headless mode does not have privacy_notices
+        if (Fides.experience?.privacy_notices) {
+            cookiesByNoticeKey = Object.fromEntries(
+                Fides.experience.privacy_notices.map(notice => [
+                    notice.notice_key,
+                    new Set(notice.cookies.map(cookie => cookie.name)) // Store cookies in a Set for quick lookup
+                ])
+            );
+        }
+
+        updateConsentSettings();
+    });
+</script>
+       
+	</head>
+
+	<body role="region" class="prog--scaling_ai_safety_for_a_multi_agent_world">
+		<!-- Skip to Main content for Accessibility -->
+		<a class="sma-skip-link" aria-label="Skip to main content" href="#maincontent"
+			>Skip to Main Content</a
+		>
+		<!-- Page -->
+		<div class="sma-page">
+			<div class="sma-topbar sma-js-topbar">
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar sma-public-navbar" role="navigation">
+    <div class="navbar-nav sma-public-nav">
+        <!-- Desktop -->
+        <div class="navbar-left hidden-sm-down">
+            
+    
+
+        </div>
+
+        <div class="navbar-right hidden-sm-down">
+            
+    
+    
+
+
+    
+        
+    
+        <a href="/acc/l/" class="btn btn-link sma-automation-hp-login-btn" id="sma-btn-login">Log In</a>
+    
+
+
+        
+            <a href="/acc/r/?g=86993" class="btn btn-primary sma-automation-hp-register-btn" id="sma-btn-register">Register</a>
+        
+        
+    <div class="nav-item dropdown hidden-sm-down">
+        <button class="btn btn-icononly nav-link dropdown-toggle" aria-haspopup="true" aria-label="Help" data-toggle="dropdown" type="button">
+            <i class="nc-icon-mini ui-2_alert-circle-i" aria-hidden="true"></i><span class="nav-link-text"></span>
+        </button>
+
+        <div class="dropdown-menu dropdown-menu-right" role="list">
+            <a class="dropdown-item sma-help-dropdown-row" role="listitem" href='mailto:mcoyne@schmidtsciences.org?Subject=Question for: Schmidt%20Sciences'>
+                <div>
+                    <div>
+                        <strong>Questions about a program or information on this site?</strong>
+                        <span class="sr-only">(opens your email application)</span>
+                    </div>
+                    <div class="sma-help-dropdown-addition-text">Contact the site administrator</div>
+                    <span class="sr-only">(opens your email application)</span>
+                </div>
+                <div class="ml-4"><i class="nc-icon-mini ui-1_email-83" aria-hidden="true"></i></div>
+            </a>
+
+            <a class="dropdown-item sma-help-dropdown-row" role="listitem" href="https://help.surveymonkey.com/en/apply/faqs/#faq" target="_blank">
+                <div>
+                    <div>
+                        <strong>Need help with using SurveyMonkey Apply?</strong>
+                        <span class="sr-only">(opens in a new tab)</span>
+                    </div>
+                    <div class="sma-help-dropdown-addition-text">Check out the FAQ</div>
+                    <span class="sr-only">(opens in a new tab)</span>
+                </div>
+                <div class="ml-4"><i class="nc-icon-mini arrows-e_share-26" aria-hidden="true"></i></div>
+            </a>
+            <a class="dropdown-item sma-help-dropdown-row" role="listitem" href="/helpdesk/" target="_blank">
+                <div>
+                    <div>
+                        <strong>Having technical issues with this site?</strong>
+                        <span class="sr-only">(opens in a new tab)</span>
+                    </div>
+                    <div class="sma-help-dropdown-addition-text">Fill in a support request form</div>
+                    <span class="sr-only">(opens in a new tab)</span>
+                </div>
+                <div class="ml-4"><i class="nc-icon-mini arrows-e_share-26" aria-hidden="true"></i></div>
+            </a>
+        </div>
+    </div>
+
+    
+ 
+        </div>
+
+        <!-- Mobile -->
+        <div class="navbar-left hidden-md-up">
+            
+    
+
+    
+
+        </div>
+
+        <div class="navbar-right hidden-md-up">
+            
+                
+    
+    
+
+    
+    
+        <a href="/acc/l/" class="btn btn-link sma-automation-hp-login-btn" id="sma-btn-login">Log In</a>
+    
+
+
+            
+        </div>
+    </div>
+</nav>
+	
+</div>
+			<div id="sma-alerts" class="sma-alerts"></div>
+			<!-- Skip to Navigation Link for Accessibility -->
+			<a
+				class="sma-skip-link sma-skip-link-top"
+				id="sma-skip-nav-btn"
+				aria-label="Skip to left navigation"
+				aria-describedby="sma-skip-nav-desc"
+				tabindex="0"
+				role="link"
+				>Skip to left navigation</a
+			>
+			<div class="sma-content-container ">
+				<main
+					role="main"
+					id="maincontent"
+					class="sma-content "
+				>
+					
+	
+		<div class="sma-applicant-header">
+			
+			<h3 class="sma-applicant-title">Schmidt Sciences</h3>
+			
+		</div>
+	
+  
+
+	<div class="container main-content">
+		
+	<div class="row">
+		<!-- MOBILE -->
+		<div class="col-12 hidden-md-up px-0">
+			<div class="sma-program-profile-mobile-top">
+				<div class="sma-program-profile-mobile-header">Scaling AI Safety for a Multi-Agent World</div>
+
+				
+
+				
+					<div class="sma-program-profile-mobile-dates">Opens Jun 11 2026 06:59 AM (EDT)</div>
+				
+
+				
+					<div class="sma-program-profile-mobile-dates">Deadline Aug 9 2026 07:59 AM (EDT)</div>
+				
+
+				
+
+				
+					
+				
+			</div>
+			<div class="sma-program-profile-mobile-bottom">
+				<div class="sma-program-profile-mobile-subheader">Description</div>
+				<span class="fr-view"><h1><strong>Scaling AI Safety for a Multi-Agent World</strong></h1><p>A joint funding call by <a href="https://www.schmidtsciences.org/" rel="noopener noreferrer">Schmidt Sciences</a>, <a href="https://deepmind.google/" rel="noopener noreferrer">Google DeepMind</a>, <a href="https://aria.org.uk/" rel="noopener noreferrer">Advanced Research &amp; Invention Agency (ARIA)</a>, the <a href="https://www.cooperativeai.com/foundation" rel="noopener noreferrer">Cooperative AI Foundation</a>, and <a href="http://google.org" rel="noopener noreferrer">Google.org</a></p><table><thead><tr><th style="width: 40.5779%;"><p style="text-align: center;">Proposal Due Date</p></th><th style="width: 59.2216%;"><p style="text-align: center;"><strong>August 8th, 2026</strong> <strong>&nbsp;by 11:59pm&nbsp;</strong><span style="color: rgb(44, 130, 201);"><u><a href="https://en.wikipedia.org/wiki/Anywhere_on_Earth" rel="noopener noreferrer"><strong>AoE</strong></a></u></span></p></th></tr><tr><th style="width: 40.5779%;"><p style="text-align: center;">Notification of Decision</p></th><th style="width: 59.2216%;"><p style="text-align: center;"><strong>Autumn 2026</strong></p></th></tr><tr><th style="width: 40.5779%;"><p style="text-align: center;">Funding Tiers</p></th><th style="width: 59.2216%;"><p><strong>Tier 1: Up to US $300,000 (1-2 years)</strong></p><p><strong>Tier 2: US $300,000-$1,000,000 (1-2 years)</strong></p></th></tr><tr><th style="width: 40.5779%;"><p style="text-align: center;">Informational Webinars</p></th><th style="width: 59.2216%;"><table><tbody><tr><td><p><strong>Tuesday, June 30 12 pm ET. Register <a class="fr-green" href="https://schmidtentities.zoom.us/webinar/register/WN_81mgT461QAm3agXR0nV_NA" rel="noopener noreferrer">here</a></strong></p><p><strong>Thursday, July 23 10 am ET. Register <a class="fr-green" href="https://schmidtentities.zoom.us/webinar/register/WN_ZhzeK6fASZKIKC_hy4u8Ug" rel="noopener noreferrer">here</a></strong></p></td></tr></tbody></table><p style="text-align: center;"><span style="color: rgb(44, 130, 201);"><u><a class="fr-green" href="https://schmidtentities.zoom.us/webinar/register/WN_65To4rvjShC-VuJudeC8xA" target="_blank" rel="noopener noreferrer"></a></u></span></p></th></tr><tr><th style="width: 40.5779%;"><p style="text-align: center;">Contact email</p></th><th style="width: 59.2216%;"><p style="text-align: center;"><strong>multiagentsafety@schmidtsciences.org</strong></p></th></tr><tr><th style="width: 40.5779%;"><p style="text-align: center;">Link to FAQ</p></th><th style="width: 59.2216%;"><p style="text-align: center;"><strong>&nbsp;</strong><span style="color: rgb(44, 130, 201);"><a href="https://docs.google.com/document/d/1LLRZvrKZD9rtKAWjWXPBVZpA5PTpWZatLBkPFT1IuzU/edit?tab=t.0" target="_blank" rel="noopener noreferrer"><strong><u>FAQ</u></strong></a></span></p></th></tr></thead></table><p><br></p><h2><strong>Core Question and Overview</strong></h2><p><br></p><table style="width: 100%;"><tbody><tr><td style="width: 100%; background-color: rgb(209, 213, 216);"><strong>How do we ensure safety in a world with millions of interacting agents, built and deployed by many different actors?</strong><br></td></tr></tbody></table><p><br></p><p>AI agents are increasingly being deployed in multi-agent settings. While most present-day cases involve teams of agents orchestrated by a single actor (or ‘principal’), we are beginning to see the emergence of more complex ecosystems of agents deployed by different actors across shared digital infrastructure. These multi-principal, multi-agent interactions create new opportunities for cooperation and shared benefit (<span style="color: rgb(44, 130, 201);"><a href="https://www.nature.com/articles/d41586-021-01170-0" rel="noopener noreferrer">Dafoe et al., 2021</a></span>), but also new risks, which means focusing only on the safety and alignment of individual models is insufficient (<span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2502.14143" rel="noopener noreferrer">Hammond et al., 2025</a></span>).</p><p>More research is therefore urgently needed to understand safety and risk through a system-level, multi-agent lens – developing methods to analyse emergent collective dynamics, building infrastructure for trustworthy interaction between agents, and creating scalable approaches for monitoring and control of increasingly complex networks of AI systems. While some of these problems will be addressed by market forces, we expect others to fall through the gaps. This funding call aims to fill those gaps, catalysing the foundational scientific research needed to understand, evaluate, and control risks emerging from large-scale ecosystems of interacting AI agents, deployed by multiple actors.</p><p>The call has been inspired by three recent papers. First, Google DeepMind’s “<span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2512.16856" rel="noopener noreferrer">Distributional AGI Safety</a></span>” outlines the safety implications of highly capable AI systems emerging not as single monolithic agents, but through coordinated networks of specialised sub-AGI systems with differential access to tools, data, memory, and resources. Second, ARIA’s “<span style="color: rgb(44, 130, 201);"><a href="https://aria.org.uk/opportunity-spaces/trust-everything-everywhere/scaling-trust/" rel="noopener noreferrer">Scaling Trust</a></span>” programme thesis argues that, in a world of increasingly capable networked agents acting across digital and physical environments, coordination infrastructure that lets agents enter into 'contracts' securely, programmatically, at scale, and without intermediaries can preserve pluralism and unlock new forms of coordination. Finally, the Cooperative AI Foundation’s “<span style="color: rgb(44, 130, 201);"><a href="https://www.cooperativeai.com/post/new-report-multi-agent-risks-from-advanced-ai" rel="noopener noreferrer">Multi-Agent Risks from Advanced AI</a></span>” report argues that interacting populations of AI agents introduce qualitatively new failure modes beyond single-agent systems, including collusion, conflict, destabilising dynamics, emergent agency, and novel multi-agent security vulnerabilities. These perspectives in turn build on earlier work by <span style="color: rgb(44, 130, 201);"><a href="https://dl.acm.org/doi/abs/10.5555/22939" rel="noopener noreferrer">Minsky (1986)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://dl.acm.org/doi/10.5555/59160" rel="noopener noreferrer">Huberman (1988)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://www.cs.ox.ac.uk/people/michael.wooldridge/pubs/ker95.pdf" rel="noopener noreferrer">Wooldridge &amp; Jennings (1995)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/1810.10862" rel="noopener noreferrer">Manheim (2018)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://static1.squarespace.com/static/660e95991cf0293c2463bcc8/t/660ec8f0ca87a33aa8832af3/1712244978900/2019-1.pdf" rel="noopener noreferrer">Drexler (2019)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2006.04948" rel="noopener noreferrer">Critch &amp; Krueger (2020)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://longtermrisk.org/research-agenda/" rel="noopener noreferrer">Clifton (2020)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2012.08630" rel="noopener noreferrer">Dafoe et al. (2020)</a></span>, <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26791" rel="noopener noreferrer"><span style="color: rgb(44, 130, 201);">Conitzer &amp; Oesterheld (2023</span>)</a>, <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2501.10114" rel="noopener noreferrer">Chan et al. (2025)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2501.07913" rel="noopener noreferrer">Kolt (2025)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2509.01063" rel="noopener noreferrer">Hadfield &amp; Koh (2025)</a></span>, and <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2509.10147" rel="noopener noreferrer">Tomašev et al. (2025)</a></span>, among many others.</p><p><br></p><h2><strong>Research Agenda</strong></h2><p>We organise this call into four sections, corresponding to the following research clusters:</p><ol><li><p>Sandboxes and Testbeds&nbsp;address the first major bottleneck: without realistic, reproducible multi-agent environments, progress on the remaining sections is hard to evaluate or compare.</p></li><li><p>The Science of Agent Networks&nbsp;focuses on the safety-relevant properties of interacting agent populations: how collective capabilities emerge and scale, how networks of agents fail or become volatile, and how dangerous population-level properties can be detected.</p></li><li><p>Strengthening Agent Infrastructure&nbsp;concerns the evaluation and stress-testing of the technical primitives – identity, verifiability, reputation, communication, commitment – on which trustworthy multi-agent interactions will depend.</p></li><li><p>Multi-Agent Oversight and Control covers the detection, attribution, security, and intervention methods needed to keep deployed agent populations safe at scale.</p></li></ol><p>We expect work in the latter clusters to build on work in the former clusters. Proposals may therefore target one cluster or span several, but we will prioritise those that target depth rather than breadth. In particular, we stress the importance of realistic sandboxes and testbeds (Section 1) for enabling scientific progress across the broader agenda. Where appropriate, we also encourage collaborations between teams addressing Section 1 with those addressing other sections, and welcome suggestions or requests for sandboxes and testbeds from those submitting proposals under other sections.</p><p>In what follows, the questions under each cluster are guidance, not an exhaustive specification. We welcome proposals that do not match the topics verbatim if they clearly advance the agenda's underlying goals. Topics explicitly out of scope are listed at the end.</p><h3><strong>1. Sandboxes and Testbeds</strong></h3><p>Empirical work on the safety of multi-principal, multi-agent deployments is bottlenecked by the need for realistic and reproducible testbeds. Existing work has made important progress using stylised games and simulated social environments (e.g., <span style="color: rgb(44, 130, 201);"><a href="https://www.nature.com/articles/s41562-025-02172-y" rel="noopener noreferrer">Akata et al., 2025</a></span>; <span style="color: rgb(44, 130, 201);"><a href="https://openreview.net/forum?id=MUtbsFRZwI" rel="noopener noreferrer">Gandhi et al., 2023</a></span>; <span style="color: rgb(44, 130, 201);"><a href="https://dl.acm.org/doi/10.1145/3586183.3606763" rel="noopener noreferrer">Park et al., 2023</a></span>), though these settings face important limitations. We therefore seek testbeds that allow researchers to study populations of frontier-model agents interacting over extended periods with realistic tools, memory systems, economic constraints, and communication channels (<span style="color: rgb(44, 130, 201);"><a href="https://cruxevals.com/" rel="noopener noreferrer">Kapoor et al., 2026</a></span>). While we are interested in seeing proposals that address this section alone, we expect such environments to be deliberately designed to support the comparative evaluation of the theoretical measures, protocols, and oversight mechanisms discussed in later sections. Sandboxes and testbeds should be:</p><ul><li><p>Scalable&nbsp;to a realistic number of agents and an appropriate diversity of agentic tools, knowledge bases, etc.;</p></li><li><p>High-fidelity, capturing behaviours of frontier AI agents rather than coarse abstractions;</p></li><li><p>Externally valid, enabling a principled characterisation of the deployment conditions under which simulation-derived conclusions should and should not be trusted;</p></li><li><p>Safe and secure, allowing dangerous collective behaviours to be studied without risk of uncontrolled deployment;</p></li><li><p>Reproducible, enabling researchers to compare different methods.</p></li></ul><p>We also welcome proposals that are not focused on a particular testbed or environment itself, but contribute significantly to addressing one or more of the problems above, such as:</p><ul><li><p>Navigating the trade-off between scalability and fidelity, for example, by using smaller, distilled models to serve as faithful proxies for frontier agents in simulations;</p></li><li><p>Developing principled methods to utilise data from real-world deployments to design grounded environments and to evaluate their external validity;</p></li><li><p>Building environment-agnostic infrastructure that enables interoperation between testbeds or methods for logging information across many agents.</p></li></ul><h3><strong>2. The Science of Agent Networks</strong></h3><p>Understanding the system-level properties and dynamics of populations of advanced AI agents is a foundational scientific challenge. It requires characterising how the properties of individual agents – their capabilities, objectives, and behavioural dispositions – contribute to population-level outcomes, as well as how the structure and dynamics of agent networks give rise to emergent vulnerabilities, failures, and collective behaviours. Of particular importance are cases where groups of agents form a ‘collective agent’, exhibiting coherent collective ‘goals’, strategies, or capabilities that are not predictable from individual systems in isolation.&nbsp;</p><p>Without this scientific foundation, individual-level safeguards may fail to anticipate system-level risks, reducing our ability to pre-empt, forecast, or diagnose the impacts of larger-scale deployments. We are especially interested in work that combines theoretical insight with empirical evaluation in realistic multi-agent settings. Illustrative research directions include:</p><ol><li><p>From individual properties to system-level safety.&nbsp;Determining how the cooperation-relevant properties of individual agents – their strategic capabilities, propensity to cooperate or defect, and susceptibility to manipulation – shape system-level outcomes (<span style="color: rgb(44, 130, 201);"><a href="https://openreview.net/forum?id=00KtDBoKnO" rel="noopener noreferrer">Tilli, 2026</a></span>). Establishing relationships between agents’ training data, objectives, and model specifications and their cooperation-relevant properties.</p></li><li><p>Evaluating vulnerabilities in networks of AI agents. New evaluation frameworks for risks specific to multi-agent deployments, such as resilience to adversarial sub-populations, propagation of attacks between agents (e.g., <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2410.07283" rel="noopener noreferrer">Lee &amp; Tiwari, 2024</a></span>), and susceptibility to cascading failures. Red-teaming frameworks that can surface new collective failure modes at scale.</p></li><li><p>Modelling emergent capabilities and communication.&nbsp;Models and metrics that can be used to predict how collective capabilities, volatilities, and other safety-relevant properties vary with population size, heterogeneity, interaction topology, individual agent capabilities, and the availability of tools and resources. Areas of particular interest are the emergence and transferability of new forms of communication and the possibility of ‘phase transitions’ in agent populations.</p></li><li><p>Theoretical foundations of collective agency. Formal definitions of collective agency and emergent ‘goals’ or capabilities, with tractable operationalisations applicable to realistic settings. Several existing proposals (e.g.,<span style="color: rgb(44, 130, 201);"> <a href="https://dl.acm.org/doi/10.1145/2815502" rel="noopener noreferrer">Szabo &amp; Teo, 2015</a></span>; <span style="color: rgb(44, 130, 201);"><a href="https://openreview.net/forum?id=NacA6YRBNX" rel="noopener noreferrer">Jørgensen et al., 2025</a></span>) either require infeasibly many observations and interventions or rely on micro- or macro-level abstractions that are hard to instantiate in practice.</p></li><li><p>Evaluating dangerous emergent capabilities and goals.&nbsp;Evaluations that target whether combinations of agents exhibit specific dangerous capabilities or ‘goals’ absent in individuals. Examples include: coordination to resist modification or shutdown (<span style="color: rgb(44, 130, 201);"><a href="https://dl.acm.org/doi/abs/10.65109/HQQZ1937" rel="noopener noreferrer">Agrawal et al., 2026</a></span>), decomposing tasks to evade per-agent safety filters (<span style="color: rgb(44, 130, 201);"><a href="https://openreview.net/forum?id=GCkhEPE1FG" rel="noopener noreferrer">Jones et al., 2025</a></span>), developing covert communication channels (<span style="color: rgb(44, 130, 201);"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/861f7dad098aec1c3560fb7add468d41-Abstract-Conference.html" rel="noopener noreferrer">Motwani et al., 2024</a></span>), or accumulating resources and influence at the collective level.</p></li></ol><h3><strong>3. Strengthening Agent Infrastructure</strong></h3><p>Protocols and infrastructure for agent interaction, such as <a href="https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/" rel="noopener noreferrer">A2A</a>, are emerging rapidly but tend to prioritise utility over security. The network effects driving their adoption and the nature of lock-in in digital infrastructure imply that we cannot afford to make safety an afterthought, but also that&nbsp;new&nbsp;infrastructure that attempts to replace increasingly entrenched incumbents is a less tractable direction. In this call, therefore, our focus is on stress-testing and strengthening existing agent infrastructure. This includes understanding and improving the safety-relevant properties of agent infrastructure and protocols (either theoretically or by empirical stress-testing in realistic scenarios), as well as providing additional support for features such as identity, reputation, accountability, provenance, commitment, or verifiable attributes, which have safety and governance implications (<span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2501.10114" rel="noopener noreferrer">Chan et al., 2025</a></span>). The distinctive properties of AI agents – including that they can be copied, modified, simulated, deleted, inspected, or deployed at scale – complicate familiar approaches to these problems while also enabling new solutions (<a href="https://ojs.aaai.org/index.php/AAAI/article/view/26791" rel="noopener noreferrer"><span style="color: rgb(44, 130, 201);">Conitzer &amp;</span> <span style="color: rgb(44, 130, 201);">Oesterheld, 2023</span></a>).</p><ol><li><p>Agent identity, authentication, and admission control.&nbsp;Understanding the requirements and challenges for agent IDs vis-à-vis current deployments (<span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2406.12137" rel="noopener noreferrer">Chan et al., 2024</a></span>), including update and revocation procedures compatible with agents being copied, modified, or merged, and the uses of proof-of-agent or proof-of-human credentials. Investigating what changes to standard cryptographic trust protocols are necessary for platform-side vetting and access control across heterogeneous agents.</p></li><li><p>Verifiable attributes, actions, and provenance. Methods for agents to reveal and verify their properties, resources, authorisation scope, and outputs, including zero-knowledge techniques where such information is strategically sensitive. Watermarking and scalable proofs of inference for attributing outputs to specific agents (e.g., <span style="color: rgb(44, 130, 201);"><a href="https://proceedings.mlr.press/v202/kirchenbauer23a.html" rel="noopener noreferrer">Kirchenbauer et al., 2023</a></span>; <span style="color: rgb(44, 130, 201);"><a href="https://dl.acm.org/doi/10.1145/3658644.3670334" rel="noopener noreferrer">Sun et al., 2024</a></span>).</p></li><li><p>Reputation, accountability, and dispute resolution.&nbsp;Reputation system design for AI agents: how reputations are represented, what behavioural inputs feed them, how those inputs are aggregated, and how the resulting signals are made robust to gaming and manipulation. Infrastructure for tracking relationships and incidents across agent populations. Protocols for dispute resolution, renegotiation, and graceful termination when agreements break down.</p></li><li><p>Commitments and delegation.&nbsp;Methods for credible commitment without third-party enforcement, not just via cryptographic tools but also by delegating to sub-agents whose code or other properties can be checked (<span style="color: rgb(44, 130, 201);"><a href="https://www.sciencedirect.com/science/article/pii/S0899825604000314" rel="noopener noreferrer">Tennenholtz, 2004</a></span>). We are especially interested in provisions for mutually conditional commitments, scope attenuation, multi-principal support, verifiable revocation, and other approaches that can reduce downside risks. Contract compliance monitoring and defences against delegation risks such as Sybil attacks and threats/malicious delegates.</p></li></ol><h3><strong>4. Multi-Agent Oversight and Control</strong></h3><p>Many important risks from collective AI systems – including collusion, cascading failures, and emergent collective capabilities – are fundamentally population-level phenomena. Oversight mechanisms designed for individual agents may not straightforwardly scale to large populations of interacting systems. We therefore seek technical methods to detect, attribute, discourage, and control unsafe behaviour in deployed multi-agent systems. Importantly, these methods must remain robust under realistic, multi-principal deployment constraints and partial observability. We expect that they will build on the foundational science of agent networks (Section 2) and may also leverage emerging agent infrastructure (Section 3).</p><ol><li><p>Detection of collusion and the evolution of inter-agent communication. Algorithms and tools to detect undesirable or unanticipated coordination between agents, including via emergent forms of communication or steganography (e.g., <span style="color: rgb(44, 130, 201);"><a href="https://openreview.net/forum?id=HCl41wIi9gc" rel="noopener noreferrer">Bonjour et al., 2022</a></span>; <span style="color: rgb(44, 130, 201);"><a href="https://openreview.net/forum?id=SRn1MtMPRq" rel="noopener noreferrer">Riedl, 2026</a></span>; <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2604.01151" rel="noopener noreferrer">Rose et al., 2026</a></span>). Methods that can identify such signals from (partial observations of) both interaction and communication traces, ideally using privacy-preserving tools.</p></li><li><p>Attribution and oversight interfaces.&nbsp;Tools to help trace emergent failures back to specific agents, interactions, or delegation chains (<a href="https://openreview.net/forum?id=GazlTYxZss&amp;noteId=cypPlShPMW" rel="noopener noreferrer">Zhang et al., 2025</a>). Interfaces and visualisations that make agent populations – their structure, relationships, and decision processes – legible to human overseers, including interactive tools for exploring and querying populations at runtime.</p></li><li><p>Multi-agent control and scalable oversight.&nbsp;Extensions of AI control (<span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2312.06942" rel="noopener noreferrer">Greenblatt et al., 2025</a></span>) and scalable oversight methodologies (see <a href="https://arxiv.org/abs/2504.01849" rel="noopener noreferrer"><span style="color: rgb(44, 130, 201);">Shah et al., 202</span>5</a>, Section 6.1) to multi-agent settings. This includes designing secure harnesses and task-allocation architectures that respect cross-principal trust boundaries (<span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2601.09923" rel="noopener noreferrer">Foerster et al., 2026</a></span>), as well as red/blue-team evaluations of control protocols for robustness to subversion by groups of agents.</p></li><li><p>Mechanism and information design.&nbsp;Adaptive mechanism design tools and algorithms for promoting cooperation or preventing collusion among frontier-model agents in complex domains. Information design tools – what to reveal to which agents – to promote cooperation or reduce miscoordination. Circuit breakers, (de)synchronisation, and limits on agent action rates for stabilising volatile networks. Agents designed to foster population-level cooperation and stability when reliance on centralised mechanisms is undesirable or infeasible.</p></li></ol><h2><br></h2><h2><strong>Out of Scope</strong></h2><p>The following topics are not in scope, either because they are being pursued through other channels, because they concern individual rather than multi-principal, multi-agent safety problems, or because they fall outside the technical, system-level focus of the call:</p><ul><li><p>Single-agent safety.&nbsp;Alignment, interpretability, robustness, and oversight of individual AI agents, including defences against environmental attacks such as prompt injection, jailbreaks, and malicious web content, and methods for their detection.</p></li><li><p>Capability advancement.&nbsp;Work aimed primarily at increasing the individual or collective capabilities of AI agents – including their general cooperative capabilities – in the absence of a clear safety motivation. If the primary contribution is a system that performs better at a task, and the safety analysis is secondary or post hoc, the work is out of scope regardless of framing.</p></li><li><p>Individual-agent cooperation without system-level evaluation. Training methods, model specifications, or constitutions for making individual agents more cooperative, where evaluation stops at the individual or pairwise level.</p></li><li><p>Solutions relying on a single agent deployer (‘principal’). Certain solutions to multi-agent problems rely on the existence of a privileged overseer or principal who governs and controls all agents. These solutions do not apply to the multi-principal deployments we focus on in this call.</p></li><li><p>AI for human cooperation.&nbsp;AI-facilitated negotiation and mediation, AI for democratic institutions, and other applications where the primary objective is helping humans cooperate with one another rather than addressing the safety of multi-agent AI systems.</p></li><li><p>Agentic inequality and power concentration.&nbsp;Although related to multi-agent safety, technical interventions that target disparities in who can deploy agents with different capabilities constitute a distinct agenda and are out of scope here.</p></li><li><p>Non-technical work.&nbsp;Purely conceptual, philosophical, or policy-oriented contributions that do not involve technical elements or a plausible path to real-world technical implementation.</p></li><li><p>Toy systems.&nbsp;Proposals that do not engage with frontier-model agents under realistic deployment conditions. This includes classical game-theoretic settings (e.g., iterated normal-form games or simple auctions with discrete action spaces) without a concrete and credible methodology for extending results to populations of natural-language (or multimodal) agents that use tools and have persistent memory in realistic environments.</p></li><li><p>Naive application of pre-existing solutions.&nbsp;Proposals that straightforwardly apply standard mechanisms for identity, reputation, commitment, or trust (e.g., blockchain-based identity, human reputation systems) to AI agents without addressing challenges specific to the AI-agent setting - such as agent clonability, the absence of persistent biological identity, or machine-speed interactions.</p></li><li><p>Commercial product development. &nbsp;This is a philanthropic funding call targeting work that markets would not otherwise do, and proposals will be evaluated through that lens. That said, we welcome research that produces open tools and frameworks, as well as foundational work that may yield downstream applications beyond the project’s immediate philanthropic purposes.</p></li></ul><h2><br></h2><h2><strong>Eligibility and Funding Tiers</strong></h2><p>We invite applicants to apply to either or both funding tiers: Tier 1 (Up to $300,000) or Tier 2 ($300,000-$1,000,000). Project durations can range from one to two years. Tier 1 aims to support exploratory research projects, pilot studies, or focused technical investigations, whereas Tier 2 targets more ambitious or collaborative projects.</p><p>We invite individual researchers, research teams, research institutions, and multi-institution collaborations across universities, national laboratories, institutes, and nonprofit research organisations. We are open globally and encourage collaborations across geographic boundaries. For any projects funded by Schmidt Sciences, indirect costs must be at or below 10% to comply with our <a href="https://www.schmidtsciences.org/faq/" rel="noopener noreferrer">policy</a>. Projects funded under this RFP must comply with all applicable law and may not include lobbying, efforts to influence legislation or political activity.</p><h2><br></h2><h2><strong>Selection Criteria</strong></h2><p>Proposals will be evaluated holistically. Key considerations include:</p><ol><li><p><strong>Research Agenda Fit.</strong> Does the proposal clearly engage with the intention behind the scientific questions and objectives in the research agenda?</p></li><li><p><strong>Scientific Quality and Rigour.</strong> Is the proposed work technically sound, well-motivated, and capable of producing generalizable insight?</p></li><li><p><strong>Potential Impact.</strong> If successful, would the project materially advance scientific understanding relevant to this call, or meaningfully improve our ability to understand, evaluate, or control risks posed by multi-principal, multi-agent AI systems?</p></li><li><p><strong>Philanthropic fit.&nbsp;</strong>Is there a clear market, coordination, or incentive failure that means commercial interests are unlikely to solve this problem?</p></li><li><p><strong>Feasibility and Scope.</strong> Is there sufficient evidence to suggest that the proposal’s milestones and deliverables are ambitious yet well-defined and feasible enough to be achievable within the stated time duration?</p></li><li><p><strong>Team Expertise.</strong> Is the team well-suited to execute the proposed work, with relevant technical expertise, sufficient capacity, and a time commitment commensurate with the project's ambition?</p></li><li><p><strong>Cost Appropriateness.</strong> Is the proposed budget reasonable and well-justified given the project’s goals and planned activities?</p></li><li><p><strong>Additional funder-specific considerations.</strong>&nbsp; Applications will be considered by the parties jointly supporting this funding call. If your proposal is selected for funding, the specific party or parties funding your project may provide additional limitations or guidance applicable to your award, which would be documented, if agreed upon, in your final award documentation.</p></li></ol><p><br></p><p><br></p></span>
+
+				
+
+				<!-- Program CustomFields -->
+				
+			</div>
+			
+				
+					<a href="/prog/297143/apply/?next=/prog/scaling_ai_safety_for_a_multi_agent_world/" class="btn btn-primary btn-loud btn-block fixed-bottom sma-js-program-apply">
+						Apply
+					</a>
+				
+			
+		</div>
+
+		<!-- DESKTOP -->
+		<div class="col-md-8 hidden-sm-down">
+			<div class="sma-program-profile-card-left">
+				<h2>Scaling AI Safety for a Multi-Agent World</h2>
+				<br>
+				<div class="fr-view">
+					<h1><strong>Scaling AI Safety for a Multi-Agent World</strong></h1><p>A joint funding call by <a href="https://www.schmidtsciences.org/" rel="noopener noreferrer">Schmidt Sciences</a>, <a href="https://deepmind.google/" rel="noopener noreferrer">Google DeepMind</a>, <a href="https://aria.org.uk/" rel="noopener noreferrer">Advanced Research &amp; Invention Agency (ARIA)</a>, the <a href="https://www.cooperativeai.com/foundation" rel="noopener noreferrer">Cooperative AI Foundation</a>, and <a href="http://google.org" rel="noopener noreferrer">Google.org</a></p><table><thead><tr><th style="width: 40.5779%;"><p style="text-align: center;">Proposal Due Date</p></th><th style="width: 59.2216%;"><p style="text-align: center;"><strong>August 8th, 2026</strong> <strong>&nbsp;by 11:59pm&nbsp;</strong><span style="color: rgb(44, 130, 201);"><u><a href="https://en.wikipedia.org/wiki/Anywhere_on_Earth" rel="noopener noreferrer"><strong>AoE</strong></a></u></span></p></th></tr><tr><th style="width: 40.5779%;"><p style="text-align: center;">Notification of Decision</p></th><th style="width: 59.2216%;"><p style="text-align: center;"><strong>Autumn 2026</strong></p></th></tr><tr><th style="width: 40.5779%;"><p style="text-align: center;">Funding Tiers</p></th><th style="width: 59.2216%;"><p><strong>Tier 1: Up to US $300,000 (1-2 years)</strong></p><p><strong>Tier 2: US $300,000-$1,000,000 (1-2 years)</strong></p></th></tr><tr><th style="width: 40.5779%;"><p style="text-align: center;">Informational Webinars</p></th><th style="width: 59.2216%;"><table><tbody><tr><td><p><strong>Tuesday, June 30 12 pm ET. Register <a class="fr-green" href="https://schmidtentities.zoom.us/webinar/register/WN_81mgT461QAm3agXR0nV_NA" rel="noopener noreferrer">here</a></strong></p><p><strong>Thursday, July 23 10 am ET. Register <a class="fr-green" href="https://schmidtentities.zoom.us/webinar/register/WN_ZhzeK6fASZKIKC_hy4u8Ug" rel="noopener noreferrer">here</a></strong></p></td></tr></tbody></table><p style="text-align: center;"><span style="color: rgb(44, 130, 201);"><u><a class="fr-green" href="https://schmidtentities.zoom.us/webinar/register/WN_65To4rvjShC-VuJudeC8xA" target="_blank" rel="noopener noreferrer"></a></u></span></p></th></tr><tr><th style="width: 40.5779%;"><p style="text-align: center;">Contact email</p></th><th style="width: 59.2216%;"><p style="text-align: center;"><strong>multiagentsafety@schmidtsciences.org</strong></p></th></tr><tr><th style="width: 40.5779%;"><p style="text-align: center;">Link to FAQ</p></th><th style="width: 59.2216%;"><p style="text-align: center;"><strong>&nbsp;</strong><span style="color: rgb(44, 130, 201);"><a href="https://docs.google.com/document/d/1LLRZvrKZD9rtKAWjWXPBVZpA5PTpWZatLBkPFT1IuzU/edit?tab=t.0" target="_blank" rel="noopener noreferrer"><strong><u>FAQ</u></strong></a></span></p></th></tr></thead></table><p><br></p><h2><strong>Core Question and Overview</strong></h2><p><br></p><table style="width: 100%;"><tbody><tr><td style="width: 100%; background-color: rgb(209, 213, 216);"><strong>How do we ensure safety in a world with millions of interacting agents, built and deployed by many different actors?</strong><br></td></tr></tbody></table><p><br></p><p>AI agents are increasingly being deployed in multi-agent settings. While most present-day cases involve teams of agents orchestrated by a single actor (or ‘principal’), we are beginning to see the emergence of more complex ecosystems of agents deployed by different actors across shared digital infrastructure. These multi-principal, multi-agent interactions create new opportunities for cooperation and shared benefit (<span style="color: rgb(44, 130, 201);"><a href="https://www.nature.com/articles/d41586-021-01170-0" rel="noopener noreferrer">Dafoe et al., 2021</a></span>), but also new risks, which means focusing only on the safety and alignment of individual models is insufficient (<span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2502.14143" rel="noopener noreferrer">Hammond et al., 2025</a></span>).</p><p>More research is therefore urgently needed to understand safety and risk through a system-level, multi-agent lens – developing methods to analyse emergent collective dynamics, building infrastructure for trustworthy interaction between agents, and creating scalable approaches for monitoring and control of increasingly complex networks of AI systems. While some of these problems will be addressed by market forces, we expect others to fall through the gaps. This funding call aims to fill those gaps, catalysing the foundational scientific research needed to understand, evaluate, and control risks emerging from large-scale ecosystems of interacting AI agents, deployed by multiple actors.</p><p>The call has been inspired by three recent papers. First, Google DeepMind’s “<span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2512.16856" rel="noopener noreferrer">Distributional AGI Safety</a></span>” outlines the safety implications of highly capable AI systems emerging not as single monolithic agents, but through coordinated networks of specialised sub-AGI systems with differential access to tools, data, memory, and resources. Second, ARIA’s “<span style="color: rgb(44, 130, 201);"><a href="https://aria.org.uk/opportunity-spaces/trust-everything-everywhere/scaling-trust/" rel="noopener noreferrer">Scaling Trust</a></span>” programme thesis argues that, in a world of increasingly capable networked agents acting across digital and physical environments, coordination infrastructure that lets agents enter into 'contracts' securely, programmatically, at scale, and without intermediaries can preserve pluralism and unlock new forms of coordination. Finally, the Cooperative AI Foundation’s “<span style="color: rgb(44, 130, 201);"><a href="https://www.cooperativeai.com/post/new-report-multi-agent-risks-from-advanced-ai" rel="noopener noreferrer">Multi-Agent Risks from Advanced AI</a></span>” report argues that interacting populations of AI agents introduce qualitatively new failure modes beyond single-agent systems, including collusion, conflict, destabilising dynamics, emergent agency, and novel multi-agent security vulnerabilities. These perspectives in turn build on earlier work by <span style="color: rgb(44, 130, 201);"><a href="https://dl.acm.org/doi/abs/10.5555/22939" rel="noopener noreferrer">Minsky (1986)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://dl.acm.org/doi/10.5555/59160" rel="noopener noreferrer">Huberman (1988)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://www.cs.ox.ac.uk/people/michael.wooldridge/pubs/ker95.pdf" rel="noopener noreferrer">Wooldridge &amp; Jennings (1995)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/1810.10862" rel="noopener noreferrer">Manheim (2018)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://static1.squarespace.com/static/660e95991cf0293c2463bcc8/t/660ec8f0ca87a33aa8832af3/1712244978900/2019-1.pdf" rel="noopener noreferrer">Drexler (2019)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2006.04948" rel="noopener noreferrer">Critch &amp; Krueger (2020)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://longtermrisk.org/research-agenda/" rel="noopener noreferrer">Clifton (2020)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2012.08630" rel="noopener noreferrer">Dafoe et al. (2020)</a></span>, <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26791" rel="noopener noreferrer"><span style="color: rgb(44, 130, 201);">Conitzer &amp; Oesterheld (2023</span>)</a>, <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2501.10114" rel="noopener noreferrer">Chan et al. (2025)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2501.07913" rel="noopener noreferrer">Kolt (2025)</a></span>, <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2509.01063" rel="noopener noreferrer">Hadfield &amp; Koh (2025)</a></span>, and <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2509.10147" rel="noopener noreferrer">Tomašev et al. (2025)</a></span>, among many others.</p><p><br></p><h2><strong>Research Agenda</strong></h2><p>We organise this call into four sections, corresponding to the following research clusters:</p><ol><li><p>Sandboxes and Testbeds&nbsp;address the first major bottleneck: without realistic, reproducible multi-agent environments, progress on the remaining sections is hard to evaluate or compare.</p></li><li><p>The Science of Agent Networks&nbsp;focuses on the safety-relevant properties of interacting agent populations: how collective capabilities emerge and scale, how networks of agents fail or become volatile, and how dangerous population-level properties can be detected.</p></li><li><p>Strengthening Agent Infrastructure&nbsp;concerns the evaluation and stress-testing of the technical primitives – identity, verifiability, reputation, communication, commitment – on which trustworthy multi-agent interactions will depend.</p></li><li><p>Multi-Agent Oversight and Control covers the detection, attribution, security, and intervention methods needed to keep deployed agent populations safe at scale.</p></li></ol><p>We expect work in the latter clusters to build on work in the former clusters. Proposals may therefore target one cluster or span several, but we will prioritise those that target depth rather than breadth. In particular, we stress the importance of realistic sandboxes and testbeds (Section 1) for enabling scientific progress across the broader agenda. Where appropriate, we also encourage collaborations between teams addressing Section 1 with those addressing other sections, and welcome suggestions or requests for sandboxes and testbeds from those submitting proposals under other sections.</p><p>In what follows, the questions under each cluster are guidance, not an exhaustive specification. We welcome proposals that do not match the topics verbatim if they clearly advance the agenda's underlying goals. Topics explicitly out of scope are listed at the end.</p><h3><strong>1. Sandboxes and Testbeds</strong></h3><p>Empirical work on the safety of multi-principal, multi-agent deployments is bottlenecked by the need for realistic and reproducible testbeds. Existing work has made important progress using stylised games and simulated social environments (e.g., <span style="color: rgb(44, 130, 201);"><a href="https://www.nature.com/articles/s41562-025-02172-y" rel="noopener noreferrer">Akata et al., 2025</a></span>; <span style="color: rgb(44, 130, 201);"><a href="https://openreview.net/forum?id=MUtbsFRZwI" rel="noopener noreferrer">Gandhi et al., 2023</a></span>; <span style="color: rgb(44, 130, 201);"><a href="https://dl.acm.org/doi/10.1145/3586183.3606763" rel="noopener noreferrer">Park et al., 2023</a></span>), though these settings face important limitations. We therefore seek testbeds that allow researchers to study populations of frontier-model agents interacting over extended periods with realistic tools, memory systems, economic constraints, and communication channels (<span style="color: rgb(44, 130, 201);"><a href="https://cruxevals.com/" rel="noopener noreferrer">Kapoor et al., 2026</a></span>). While we are interested in seeing proposals that address this section alone, we expect such environments to be deliberately designed to support the comparative evaluation of the theoretical measures, protocols, and oversight mechanisms discussed in later sections. Sandboxes and testbeds should be:</p><ul><li><p>Scalable&nbsp;to a realistic number of agents and an appropriate diversity of agentic tools, knowledge bases, etc.;</p></li><li><p>High-fidelity, capturing behaviours of frontier AI agents rather than coarse abstractions;</p></li><li><p>Externally valid, enabling a principled characterisation of the deployment conditions under which simulation-derived conclusions should and should not be trusted;</p></li><li><p>Safe and secure, allowing dangerous collective behaviours to be studied without risk of uncontrolled deployment;</p></li><li><p>Reproducible, enabling researchers to compare different methods.</p></li></ul><p>We also welcome proposals that are not focused on a particular testbed or environment itself, but contribute significantly to addressing one or more of the problems above, such as:</p><ul><li><p>Navigating the trade-off between scalability and fidelity, for example, by using smaller, distilled models to serve as faithful proxies for frontier agents in simulations;</p></li><li><p>Developing principled methods to utilise data from real-world deployments to design grounded environments and to evaluate their external validity;</p></li><li><p>Building environment-agnostic infrastructure that enables interoperation between testbeds or methods for logging information across many agents.</p></li></ul><h3><strong>2. The Science of Agent Networks</strong></h3><p>Understanding the system-level properties and dynamics of populations of advanced AI agents is a foundational scientific challenge. It requires characterising how the properties of individual agents – their capabilities, objectives, and behavioural dispositions – contribute to population-level outcomes, as well as how the structure and dynamics of agent networks give rise to emergent vulnerabilities, failures, and collective behaviours. Of particular importance are cases where groups of agents form a ‘collective agent’, exhibiting coherent collective ‘goals’, strategies, or capabilities that are not predictable from individual systems in isolation.&nbsp;</p><p>Without this scientific foundation, individual-level safeguards may fail to anticipate system-level risks, reducing our ability to pre-empt, forecast, or diagnose the impacts of larger-scale deployments. We are especially interested in work that combines theoretical insight with empirical evaluation in realistic multi-agent settings. Illustrative research directions include:</p><ol><li><p>From individual properties to system-level safety.&nbsp;Determining how the cooperation-relevant properties of individual agents – their strategic capabilities, propensity to cooperate or defect, and susceptibility to manipulation – shape system-level outcomes (<span style="color: rgb(44, 130, 201);"><a href="https://openreview.net/forum?id=00KtDBoKnO" rel="noopener noreferrer">Tilli, 2026</a></span>). Establishing relationships between agents’ training data, objectives, and model specifications and their cooperation-relevant properties.</p></li><li><p>Evaluating vulnerabilities in networks of AI agents. New evaluation frameworks for risks specific to multi-agent deployments, such as resilience to adversarial sub-populations, propagation of attacks between agents (e.g., <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2410.07283" rel="noopener noreferrer">Lee &amp; Tiwari, 2024</a></span>), and susceptibility to cascading failures. Red-teaming frameworks that can surface new collective failure modes at scale.</p></li><li><p>Modelling emergent capabilities and communication.&nbsp;Models and metrics that can be used to predict how collective capabilities, volatilities, and other safety-relevant properties vary with population size, heterogeneity, interaction topology, individual agent capabilities, and the availability of tools and resources. Areas of particular interest are the emergence and transferability of new forms of communication and the possibility of ‘phase transitions’ in agent populations.</p></li><li><p>Theoretical foundations of collective agency. Formal definitions of collective agency and emergent ‘goals’ or capabilities, with tractable operationalisations applicable to realistic settings. Several existing proposals (e.g.,<span style="color: rgb(44, 130, 201);"> <a href="https://dl.acm.org/doi/10.1145/2815502" rel="noopener noreferrer">Szabo &amp; Teo, 2015</a></span>; <span style="color: rgb(44, 130, 201);"><a href="https://openreview.net/forum?id=NacA6YRBNX" rel="noopener noreferrer">Jørgensen et al., 2025</a></span>) either require infeasibly many observations and interventions or rely on micro- or macro-level abstractions that are hard to instantiate in practice.</p></li><li><p>Evaluating dangerous emergent capabilities and goals.&nbsp;Evaluations that target whether combinations of agents exhibit specific dangerous capabilities or ‘goals’ absent in individuals. Examples include: coordination to resist modification or shutdown (<span style="color: rgb(44, 130, 201);"><a href="https://dl.acm.org/doi/abs/10.65109/HQQZ1937" rel="noopener noreferrer">Agrawal et al., 2026</a></span>), decomposing tasks to evade per-agent safety filters (<span style="color: rgb(44, 130, 201);"><a href="https://openreview.net/forum?id=GCkhEPE1FG" rel="noopener noreferrer">Jones et al., 2025</a></span>), developing covert communication channels (<span style="color: rgb(44, 130, 201);"><a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/861f7dad098aec1c3560fb7add468d41-Abstract-Conference.html" rel="noopener noreferrer">Motwani et al., 2024</a></span>), or accumulating resources and influence at the collective level.</p></li></ol><h3><strong>3. Strengthening Agent Infrastructure</strong></h3><p>Protocols and infrastructure for agent interaction, such as <a href="https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/" rel="noopener noreferrer">A2A</a>, are emerging rapidly but tend to prioritise utility over security. The network effects driving their adoption and the nature of lock-in in digital infrastructure imply that we cannot afford to make safety an afterthought, but also that&nbsp;new&nbsp;infrastructure that attempts to replace increasingly entrenched incumbents is a less tractable direction. In this call, therefore, our focus is on stress-testing and strengthening existing agent infrastructure. This includes understanding and improving the safety-relevant properties of agent infrastructure and protocols (either theoretically or by empirical stress-testing in realistic scenarios), as well as providing additional support for features such as identity, reputation, accountability, provenance, commitment, or verifiable attributes, which have safety and governance implications (<span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2501.10114" rel="noopener noreferrer">Chan et al., 2025</a></span>). The distinctive properties of AI agents – including that they can be copied, modified, simulated, deleted, inspected, or deployed at scale – complicate familiar approaches to these problems while also enabling new solutions (<a href="https://ojs.aaai.org/index.php/AAAI/article/view/26791" rel="noopener noreferrer"><span style="color: rgb(44, 130, 201);">Conitzer &amp;</span> <span style="color: rgb(44, 130, 201);">Oesterheld, 2023</span></a>).</p><ol><li><p>Agent identity, authentication, and admission control.&nbsp;Understanding the requirements and challenges for agent IDs vis-à-vis current deployments (<span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2406.12137" rel="noopener noreferrer">Chan et al., 2024</a></span>), including update and revocation procedures compatible with agents being copied, modified, or merged, and the uses of proof-of-agent or proof-of-human credentials. Investigating what changes to standard cryptographic trust protocols are necessary for platform-side vetting and access control across heterogeneous agents.</p></li><li><p>Verifiable attributes, actions, and provenance. Methods for agents to reveal and verify their properties, resources, authorisation scope, and outputs, including zero-knowledge techniques where such information is strategically sensitive. Watermarking and scalable proofs of inference for attributing outputs to specific agents (e.g., <span style="color: rgb(44, 130, 201);"><a href="https://proceedings.mlr.press/v202/kirchenbauer23a.html" rel="noopener noreferrer">Kirchenbauer et al., 2023</a></span>; <span style="color: rgb(44, 130, 201);"><a href="https://dl.acm.org/doi/10.1145/3658644.3670334" rel="noopener noreferrer">Sun et al., 2024</a></span>).</p></li><li><p>Reputation, accountability, and dispute resolution.&nbsp;Reputation system design for AI agents: how reputations are represented, what behavioural inputs feed them, how those inputs are aggregated, and how the resulting signals are made robust to gaming and manipulation. Infrastructure for tracking relationships and incidents across agent populations. Protocols for dispute resolution, renegotiation, and graceful termination when agreements break down.</p></li><li><p>Commitments and delegation.&nbsp;Methods for credible commitment without third-party enforcement, not just via cryptographic tools but also by delegating to sub-agents whose code or other properties can be checked (<span style="color: rgb(44, 130, 201);"><a href="https://www.sciencedirect.com/science/article/pii/S0899825604000314" rel="noopener noreferrer">Tennenholtz, 2004</a></span>). We are especially interested in provisions for mutually conditional commitments, scope attenuation, multi-principal support, verifiable revocation, and other approaches that can reduce downside risks. Contract compliance monitoring and defences against delegation risks such as Sybil attacks and threats/malicious delegates.</p></li></ol><h3><strong>4. Multi-Agent Oversight and Control</strong></h3><p>Many important risks from collective AI systems – including collusion, cascading failures, and emergent collective capabilities – are fundamentally population-level phenomena. Oversight mechanisms designed for individual agents may not straightforwardly scale to large populations of interacting systems. We therefore seek technical methods to detect, attribute, discourage, and control unsafe behaviour in deployed multi-agent systems. Importantly, these methods must remain robust under realistic, multi-principal deployment constraints and partial observability. We expect that they will build on the foundational science of agent networks (Section 2) and may also leverage emerging agent infrastructure (Section 3).</p><ol><li><p>Detection of collusion and the evolution of inter-agent communication. Algorithms and tools to detect undesirable or unanticipated coordination between agents, including via emergent forms of communication or steganography (e.g., <span style="color: rgb(44, 130, 201);"><a href="https://openreview.net/forum?id=HCl41wIi9gc" rel="noopener noreferrer">Bonjour et al., 2022</a></span>; <span style="color: rgb(44, 130, 201);"><a href="https://openreview.net/forum?id=SRn1MtMPRq" rel="noopener noreferrer">Riedl, 2026</a></span>; <span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2604.01151" rel="noopener noreferrer">Rose et al., 2026</a></span>). Methods that can identify such signals from (partial observations of) both interaction and communication traces, ideally using privacy-preserving tools.</p></li><li><p>Attribution and oversight interfaces.&nbsp;Tools to help trace emergent failures back to specific agents, interactions, or delegation chains (<a href="https://openreview.net/forum?id=GazlTYxZss&amp;noteId=cypPlShPMW" rel="noopener noreferrer">Zhang et al., 2025</a>). Interfaces and visualisations that make agent populations – their structure, relationships, and decision processes – legible to human overseers, including interactive tools for exploring and querying populations at runtime.</p></li><li><p>Multi-agent control and scalable oversight.&nbsp;Extensions of AI control (<span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2312.06942" rel="noopener noreferrer">Greenblatt et al., 2025</a></span>) and scalable oversight methodologies (see <a href="https://arxiv.org/abs/2504.01849" rel="noopener noreferrer"><span style="color: rgb(44, 130, 201);">Shah et al., 202</span>5</a>, Section 6.1) to multi-agent settings. This includes designing secure harnesses and task-allocation architectures that respect cross-principal trust boundaries (<span style="color: rgb(44, 130, 201);"><a href="https://arxiv.org/abs/2601.09923" rel="noopener noreferrer">Foerster et al., 2026</a></span>), as well as red/blue-team evaluations of control protocols for robustness to subversion by groups of agents.</p></li><li><p>Mechanism and information design.&nbsp;Adaptive mechanism design tools and algorithms for promoting cooperation or preventing collusion among frontier-model agents in complex domains. Information design tools – what to reveal to which agents – to promote cooperation or reduce miscoordination. Circuit breakers, (de)synchronisation, and limits on agent action rates for stabilising volatile networks. Agents designed to foster population-level cooperation and stability when reliance on centralised mechanisms is undesirable or infeasible.</p></li></ol><h2><br></h2><h2><strong>Out of Scope</strong></h2><p>The following topics are not in scope, either because they are being pursued through other channels, because they concern individual rather than multi-principal, multi-agent safety problems, or because they fall outside the technical, system-level focus of the call:</p><ul><li><p>Single-agent safety.&nbsp;Alignment, interpretability, robustness, and oversight of individual AI agents, including defences against environmental attacks such as prompt injection, jailbreaks, and malicious web content, and methods for their detection.</p></li><li><p>Capability advancement.&nbsp;Work aimed primarily at increasing the individual or collective capabilities of AI agents – including their general cooperative capabilities – in the absence of a clear safety motivation. If the primary contribution is a system that performs better at a task, and the safety analysis is secondary or post hoc, the work is out of scope regardless of framing.</p></li><li><p>Individual-agent cooperation without system-level evaluation. Training methods, model specifications, or constitutions for making individual agents more cooperative, where evaluation stops at the individual or pairwise level.</p></li><li><p>Solutions relying on a single agent deployer (‘principal’). Certain solutions to multi-agent problems rely on the existence of a privileged overseer or principal who governs and controls all agents. These solutions do not apply to the multi-principal deployments we focus on in this call.</p></li><li><p>AI for human cooperation.&nbsp;AI-facilitated negotiation and mediation, AI for democratic institutions, and other applications where the primary objective is helping humans cooperate with one another rather than addressing the safety of multi-agent AI systems.</p></li><li><p>Agentic inequality and power concentration.&nbsp;Although related to multi-agent safety, technical interventions that target disparities in who can deploy agents with different capabilities constitute a distinct agenda and are out of scope here.</p></li><li><p>Non-technical work.&nbsp;Purely conceptual, philosophical, or policy-oriented contributions that do not involve technical elements or a plausible path to real-world technical implementation.</p></li><li><p>Toy systems.&nbsp;Proposals that do not engage with frontier-model agents under realistic deployment conditions. This includes classical game-theoretic settings (e.g., iterated normal-form games or simple auctions with discrete action spaces) without a concrete and credible methodology for extending results to populations of natural-language (or multimodal) agents that use tools and have persistent memory in realistic environments.</p></li><li><p>Naive application of pre-existing solutions.&nbsp;Proposals that straightforwardly apply standard mechanisms for identity, reputation, commitment, or trust (e.g., blockchain-based identity, human reputation systems) to AI agents without addressing challenges specific to the AI-agent setting - such as agent clonability, the absence of persistent biological identity, or machine-speed interactions.</p></li><li><p>Commercial product development. &nbsp;This is a philanthropic funding call targeting work that markets would not otherwise do, and proposals will be evaluated through that lens. That said, we welcome research that produces open tools and frameworks, as well as foundational work that may yield downstream applications beyond the project’s immediate philanthropic purposes.</p></li></ul><h2><br></h2><h2><strong>Eligibility and Funding Tiers</strong></h2><p>We invite applicants to apply to either or both funding tiers: Tier 1 (Up to $300,000) or Tier 2 ($300,000-$1,000,000). Project durations can range from one to two years. Tier 1 aims to support exploratory research projects, pilot studies, or focused technical investigations, whereas Tier 2 targets more ambitious or collaborative projects.</p><p>We invite individual researchers, research teams, research institutions, and multi-institution collaborations across universities, national laboratories, institutes, and nonprofit research organisations. We are open globally and encourage collaborations across geographic boundaries. For any projects funded by Schmidt Sciences, indirect costs must be at or below 10% to comply with our <a href="https://www.schmidtsciences.org/faq/" rel="noopener noreferrer">policy</a>. Projects funded under this RFP must comply with all applicable law and may not include lobbying, efforts to influence legislation or political activity.</p><h2><br></h2><h2><strong>Selection Criteria</strong></h2><p>Proposals will be evaluated holistically. Key considerations include:</p><ol><li><p><strong>Research Agenda Fit.</strong> Does the proposal clearly engage with the intention behind the scientific questions and objectives in the research agenda?</p></li><li><p><strong>Scientific Quality and Rigour.</strong> Is the proposed work technically sound, well-motivated, and capable of producing generalizable insight?</p></li><li><p><strong>Potential Impact.</strong> If successful, would the project materially advance scientific understanding relevant to this call, or meaningfully improve our ability to understand, evaluate, or control risks posed by multi-principal, multi-agent AI systems?</p></li><li><p><strong>Philanthropic fit.&nbsp;</strong>Is there a clear market, coordination, or incentive failure that means commercial interests are unlikely to solve this problem?</p></li><li><p><strong>Feasibility and Scope.</strong> Is there sufficient evidence to suggest that the proposal’s milestones and deliverables are ambitious yet well-defined and feasible enough to be achievable within the stated time duration?</p></li><li><p><strong>Team Expertise.</strong> Is the team well-suited to execute the proposed work, with relevant technical expertise, sufficient capacity, and a time commitment commensurate with the project's ambition?</p></li><li><p><strong>Cost Appropriateness.</strong> Is the proposed budget reasonable and well-justified given the project’s goals and planned activities?</p></li><li><p><strong>Additional funder-specific considerations.</strong>&nbsp; Applications will be considered by the parties jointly supporting this funding call. If your proposal is selected for funding, the specific party or parties funding your project may provide additional limitations or guidance applicable to your award, which would be documented, if agreed upon, in your final award documentation.</p></li></ol><p><br></p><p><br></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4 hidden-sm-down">
+			<div class="sma-program-profile-card-right">
+				<div class="sma-program-profile-card-right-top text-center">
+					
+
+					
+						
+					
+
+					
+						
+							<a href="/prog/297143/apply/?next=/prog/scaling_ai_safety_for_a_multi_agent_world/" class="js-sma-leftnav btn btn-primary btn-loud btn-block sma-js-program-apply">
+								Apply
+							</a>
+						
+					
+
+					
+
+					<div class="sma-profile-profile-card-dates">
+						
+							<div>
+								<span class="text-muted sma-automation-open-date-label">Opens</span>
+								<h5 class="sma-automation-open-date">Jun 11 2026 06:59 AM (EDT)</h5>
+							</div>
+						
+
+						
+							<div>
+								<span class="text-muted sma-automation-deadline-label">Deadline</span>
+								<h5 class="sma-automation-deadline">Aug 9 2026 07:59 AM (EDT)</h5>
+							</div>
+						
+					</div>
+				</div>
+
+				
+
+				<!-- Program CustomFields -->
+				
+			</div>
+		</div>
+	</div>
+<script>
+	$('.form-video-element').each(function(){
+		const that = $(this);
+		const regex = /\{\{\s*(\w+):([\w\-]+):(\d+):(\d+)\s*\}\}/;
+
+		const matches = that.text().match(regex);
+		if (matches) {
+			const platform = matches[1]
+			const id = matches[2];
+			const width = matches[3];
+			const height = matches[4];
+			let video_url = `https://www.youtube.com/embed/${id}`;
+
+			if(platform === 'Vimeo'){
+				video_url = `https://player.vimeo.com/video/${id}`;
+			}
+			that.parent().parent().attr('style', 'display: flex; position: relative;')
+			that.parent().parent().html(`<iframe frameBorder="0" width="${width}" height="${height}" src="${video_url}" ></iframe>`);
+		}
+	});
+</script>
+
+	</div>
+
+				</main>
+
+				<div class="sma-footer">
+	<footer class="sma-public-footer sma-footer-padding-bottom-action">
+		<div class="container">
+			<div class="d-md-flex align-items-center justify-content-between">
+				<a class='sma-automation-logo-powered' href="https://apply.surveymonkey.com/"  target="_blank">
+					<img class="sma-logo-powered" src="//d3ovk0g3go3fof.cloudfront.net/media/img/smapply/powered-by-apply-grey.png" alt="Powered by SurveyMonkey Apply" style="max-width: 173px">
+				</a>
+				<div class="sma-automation-copyright">
+	Copyright &copy; SurveyMonkey
+    | <a href="https://help.surveymonkey.com/en/apply/build/" target="_blank">Help</a>
+	| <a href="https://www.surveymonkey.com/mp/legal/privacy/ " target="_blank">Privacy</a>
+	| <a href="https://www.surveymonkey.com/mp/legal/fluidreview-smapply-tos/" target="_blank">Terms</a>
+	
+	
+		
+			|
+			<a href="#" class="fides-modal-link-show" id="fides-modal-link"
+				onclick="Fides.showModal()">
+			</a>
+			<script>
+				document.getElementById('fides-code').addEventListener('load', function () {
+					document.getElementById('fides-modal-link').innerText = Fides.getModalLinkLabel();
+				});
+			</script>
+		
+	
+
+</div>
+			</div>
+		</div>
+	</footer>
+</div>
+			</div>
+		</div>
+
+		 
+		<script type="text/javascript">
+			function removeGA() {
+				const gaScript = document.querySelector('script[src*="google-analytics.com/analytics.js"]');
+				if (gaScript) {
+					gaScript.parentNode.removeChild(gaScript);
+				}
+
+				// Remove the Google Analytics object and trackers
+				if (window.ga) {
+					window.ga = undefined;
+				}
+
+				// Remove the Google Analytics cookies
+				document.cookie = '_ga=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+				document.cookie = '_gid=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+				document.cookie = '_gat=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+
+			}
+			function setupGA() {
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+				ga('create', 'UA-11712198-1', {'cookieDomain': location.hostname});
+
+				
+
+				ga('send', 'pageview');
+				
+			}
+			
+				<!-- GA is set up in the loader -->
+			
+		</script>
+		  
+	<script language="javascript">
+		$(function() {
+			new sma.applicants.components.MobileMenu();
+			new sma.EmailVerification();
+			new sma.RecoveryCodesLow();
+			new sma.applicants.components.MultiSelectSearch();
+
+			var length = 0;
+			var tempEl = null;
+			$('.sma-js-subnav-item').each(function(i, el) {
+				var attr = $(el).attr('href');
+
+				if (window.location.pathname.startsWith(attr) && attr.length > length) {
+					length = attr.length
+					tempEl = el
+				}
+			});
+
+			if(tempEl)
+				$(tempEl).addClass('sma-subnav-item-active');
+
+			});
+	</script>
+	
+		<script type="text/javascript">
+			let elementsWithTrackEvent = document.querySelectorAll("[data-track-event]");
+			let elements = Array.from(elementsWithTrackEvent);
+
+			function toCamelCase(s) {
+				return s
+					.replace(/\-([a-z])/g, function (match, group1) {
+						return group1.toUpperCase();
+					})
+					.replace(/^([A-Z])/, function (match, group1) {
+						return group1.toLowerCase();
+					});
+			}
+
+			elements.forEach(function (element) {
+				element.onclick = function () {
+					let attributes = {};
+					let event = null;
+					for (let i = 0; i < element.attributes.length; i++) {
+						let attribute = element.attributes[i];
+						if (attribute.name.startsWith("data-track-")) {
+							let key = toCamelCase(attribute.name.replace("data-track-", ""));
+							if (key === "event") {
+								event = attribute.value;
+							} else {
+								attributes[key] = attribute.value;
+							}
+						}
+					}
+					if (event) {
+						track(event, attributes);
+					}
+				};
+			});
+
+			$(function () {
+				sma.renderRC(sma.SystemAlerts, document.getElementById("sma-alerts"), {});
+			});
+		</script>
+		
+
+		<script type="text/javascript">
+			window.onload = function () {
+				try {
+					var leftNav = $(".js-sma-leftnav").filter(":visible").first();
+					var skipBtn = document.getElementById("sma-skip-nav-btn");
+
+					if (!leftNav.length && skipBtn) {
+						$(skipBtn).hide();
+						return;
+					}
+					if (skipBtn && leftNav.length) {
+						var focusNav = function (e) {
+							try {
+								if (e) e.preventDefault();
+								leftNav.focus();
+							} catch (err) {
+								console.error(err);
+							}
+						};
+						skipBtn.addEventListener("click", focusNav);
+						skipBtn.addEventListener("keydown", function (e) {
+							try {
+								if (e.key === "Enter" || e.key === " ") {
+									focusNav(e);
+								}
+							} catch (err) {
+								console.error(err);
+							}
+						});
+					}
+				} catch (err) {
+					console.error(err);
+				}
+			};
+		</script>
+	</body>
+
+	
+	
+
+</html>
