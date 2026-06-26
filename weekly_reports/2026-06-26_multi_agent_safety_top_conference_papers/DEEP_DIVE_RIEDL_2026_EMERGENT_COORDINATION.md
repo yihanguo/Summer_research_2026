@@ -109,6 +109,37 @@ G_3 = I_3 - max(I_2{1,2}, I_2{1,3}, I_2{2,3})
 
 中文说明：论文有三个核心检测。第一个检测成对智能体是否存在动态协同。第二个检测群体宏观状态是否比个体状态更能预测未来。第三个检测三人小组是否比最强的二人组合提供更多信息。这些指标共同判断系统是否出现了高阶结构、这种结构在哪里，以及是否与任务目标有关。
 
+### 5.4 Metric Cheat Sheet / 指标速查
+
+The paper's metrics are built from the agents' guesses over time. The basic micro-level variable is each agent's **equal-share deviation**:
+
+```text
+dev_i,t = raw_guess_i,t - target / N
+```
+
+This removes the trivial target-size effect and asks whether agent `i` contributed above or below the equal-share amount needed for the group to hit the target. The macro-level group variable is:
+
+```text
+V_t = sum_i raw_guess_i,t - target
+```
+
+Equivalently, `V_t` is the sum of all agents' equal-share deviations. Positive `V_t` means the group guessed too high; negative `V_t` means the group guessed too low.
+
+| Metric | Formula or construction | What it measures | Interpretation |
+|---|---|---|---|
+| **Emergence capacity / dynamical synergy** | `Syn_ij` from PID of `I({X_i,t, X_j,t}; T_ij,t+l)` | Whether a pair's future joint state is predictable only from the pair jointly, not from either agent alone | Positive `Syn_ij` means pairwise cross-agent synergy exists. The paper aggregates this over unordered agent pairs, usually by the median. |
+| **Practical emergence criterion** | `S_macro(l) = I(V_t; V_t+l) - sum_k I(X_k,t; V_t+l)` | Whether the macro group state predicts its future better than the summed individual parts do | Positive values indicate macro-level predictive structure beyond individual agents. This is the closest metric to "the group has become more than its parts." |
+| **Coalition information** | `I_3 = I((X_i,t, X_j,t, X_k,t); V_t+l)` | How much a triplet of agents jointly predicts the future group error | High `I_3` means a coalition carries strong information about the future macro outcome. |
+| **Triadic information gain** | `G_3 = I_3 - max(I_2{1,2}, I_2{1,3}, I_2{2,3})` | Whether a full triplet adds information beyond the best pair | Positive `G_3` means the triplet has irreducible beyond-pair structure. Near-zero `G_3` means pairwise alignment explains most of the structure. |
+| **Total Stability** | `I_3 / H(V)` | Stability of the collective macro-state, normalized by macro-signal entropy | Higher values mean the group behavior collapses into a more predictable collective state. The ToM condition sharply increases this metric. |
+| **Agent differentiation** | Hierarchical mixed-model comparisons with random intercepts/slopes | Whether agents develop stable role-like differences in contribution level or learning trajectory | Significant model comparisons suggest persistent identity-linked differentiation rather than interchangeable agents. |
+| **Success rate / rounds to success** | Whether the group exactly hits the hidden target, and how fast | Task performance | Used as an outcome, but the paper emphasizes that performance alone does not prove emergence. |
+| **Synergy x redundancy interaction** | Regression interaction term between early synergy and redundancy | Whether useful performance requires both complementarity and shared alignment | The paper reports a significant interaction (`beta = 0.24`, `p = 0.014`), suggesting synergy helps most when paired with redundancy. |
+
+The paper also reports **permutation/null-test p-values**, combines p-values across independent groups using **Fisher's method**, and checks whether bias-corrected estimates are above zero using **Wilcoxon signed-rank tests**. These are not the emergence metrics themselves; they are statistical tests used to decide whether the observed metrics are stronger than null baselines.
+
+中文说明：论文的核心指标都来自智能体在时间序列中的猜测。微观变量是每个智能体相对于平均应贡献值的偏差 `dev_i,t`，宏观变量是群体总误差 `V_t`。主要指标包括成对动态协同 `Syn_ij`、实际涌现指标 `S_macro`、三人组信息量 `I_3`、三元信息增益 `G_3`、总稳定性 `I_3 / H(V)`、智能体分化指标以及任务成功率。其中，`S_macro` 最接近“群体是否超过个体之和”这个问题；`Syn_ij` 衡量成对协同；`G_3` 检测是否存在超越任意二人组合的三人结构；Total Stability 衡量群体是否进入稳定可预测的集体状态。Fisher 检验和 Wilcoxon 检验则是用来判断这些指标是否显著高于零模型。
+
 ## 6. Falsification and Robustness Tests
 
 The paper is careful about false positives. It uses surrogate null tests:
