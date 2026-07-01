@@ -20,6 +20,7 @@ The focus is the research area discussed in the Schmidt Sciences call: emergent 
 | `PAPER_DIGEST_BILINGUAL.md` | Bilingual paper-by-paper summaries grouped by theme |
 | `DEEP_DIVE_RIEDL_2026_EMERGENT_COORDINATION.md` | Detailed bilingual explanation of the ICLR 2026 paper *Emergent Coordination in Multi-Agent Language Models* |
 | `DISCUSSION_SUMMARY_RIEDL_2026_EMERGENT_COORDINATION.md` | Focused discussion summary with experimental design, methods, algorithms, null tests, and numerical examples |
+| `DISCUSSION_SUMMARY_COOPEVAL_2026.md` | Focused discussion summary for *CoopEval*, including experimental setting, cooperation definition, mechanisms, reputation clarification, and future work |
 | `SOURCES.md` | Official venue links and inclusion notes |
 
 ## One-line takeaway
