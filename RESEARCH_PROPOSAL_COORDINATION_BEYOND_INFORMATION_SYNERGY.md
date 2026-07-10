@@ -11,9 +11,11 @@
 
 > Under an equal computation budget, when do multi-agent language-model systems convert informational interdependence and interaction structure into performance gains over a single agent?
 
-## Concrete Failure Scenario
+## Concrete Positive-Information Failure Scenario: Werewolf-Style Hidden-Role Game
 
-Consider a four-agent incident-diagnosis task in which each agent privately receives a different operational clue: authentication logs, network telemetry, a recent deployment diff, or a historical incident report. Three clues support an expired certificate, while a highly salient but misleading DNS alert plausibly suggests a network outage. The agent that sees the DNS alert states its hypothesis first and with high confidence. In a fully connected debate, the other agents respond to and repeat that hypothesis; the group therefore becomes more mutually predictable, and its measured information gain, delayed mutual information, and synergy about the final diagnosis all move in the positive direction. Yet the early false signal anchors the discussion, consumes the communication budget, and produces a confident network-outage diagnosis. A compute-matched single agent that processes the same total evidence without the anchoring sequence identifies the expired certificate more often. This is a case where information gain increases while multi-agent performance gets worse.
+Consider a 12-player Werewolf-style hidden-role game with three werewolves, one Seer, one Guard, seven villagers, and a short fixed horizon. Four village analyst agents each receive a different truthful fragment of the night and voting history. Every fragment is individually useful and increases the likelihood that Player 5 is a werewolf, but each fragment alone leaves multiple candidates. For example, the four fragments may restrict the candidate sets to `{2,5,8}`, `{1,5}`, `{5,6,9}`, and `{3,5}`. Only their intersection identifies Player 5, so no single agent can obtain the decisive identification without combining the other agents' information. The joint evidence therefore has positive information gain and positive synergy, while every clue remains true and directionally helpful.
+
+Suppose the communication protocol requires agents to publicly disclose both their evidence and its provenance. The village correctly eliminates Player 5, but the werewolves infer which agent is the Seer from the distinctive evidence pattern and kill that agent during the following night. In the remaining rounds, the village loses its only source of future hard evidence. Its final win probability can therefore be lower than under an anonymized, lower-information protocol that does not combine the raw clues publicly and keeps the Seer hidden. The performance loss is caused by strategic leakage and finite-horizon utility, not misinformation: more internal information improves role identification while making the group easier for the adversary to exploit. This is a strategic-information failure, rather than a claim that additional information hurts an ideal Bayesian decision-maker with no disclosure cost or adversary.
 
 ## Abstract
 
@@ -132,6 +134,38 @@ For two agents \(i\) and \(j\), predictive information about a future joint stat
 I(\{X_{i,t},X_{j,t}\};T_{ij,t+\ell})
 = UI_i + UI_j + Red_{ij} + Syn_{ij}.
 \]
+
+Following the attached paper, the study will calculate synergy at three related levels. First, the pairwise emergence-capacity measure uses the decomposition above. A positive \(Syn_{ij} > 0\) means that the two agents jointly provide predictive information about their future joint state that is not recoverable from either agent alone. This is evidence of joint predictive structure, not by itself evidence of task correctness or performance improvement.
+
+Second, the practical macro criterion measures whether the current macrostate predicts its future better than the sum of the individual agents:
+
+\[
+S_{\mathrm{macro}}(\ell)
+= I(V_t;V_{t+\ell})
+- \sum_{k=1}^{n} I(X_{k,t};V_{t+\ell}).
+\]
+
+Here, \(V_t = f(X_t)\) is a macro-level group signal. A positive \(S_{\mathrm{macro}}(\ell)\) indicates that the macrostate has additional time-delayed predictive information beyond the sum of individual contributions. This is a coarse, order-agnostic emergence screen and is not equivalent to positive task utility.
+
+Third, for a coalition of three agents, let
+
+\[
+I_3 = I((X_{i,t},X_{j,t},X_{k,t});V_{t+\ell})
+\]
+
+and define the predictive information of each pair as
+
+\[
+I_2^{(a,b)} = I((X_{a,t},X_{b,t});V_{t+\ell}).
+\]
+
+The triadic information gain over the most informative pair is
+
+\[
+G_3 = I_3 - \max\left\{I_2^{(i,j)}, I_2^{(i,k)}, I_2^{(j,k)}\right\}.
+\]
+
+A positive \(G_3\) means that no pair is sufficient to capture all of the information that the triplet provides about the future macro signal. Because this criterion is closer to a task-relevant group signal than pairwise emergence capacity, it will be reported separately, but it still does not guarantee higher final performance.
 
 The study will measure:
 
