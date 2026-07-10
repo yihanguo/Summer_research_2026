@@ -7,6 +7,14 @@
 **Target submission window:** January 2027  
 **Status:** Research proposal
 
+## Research Question
+
+> Under an equal computation budget, when do multi-agent language-model systems convert informational interdependence and interaction structure into performance gains over a single agent?
+
+## Concrete Failure Scenario
+
+Consider a four-agent incident-diagnosis task in which each agent privately receives a different operational clue: authentication logs, network telemetry, a recent deployment diff, or a historical incident report. Three clues support an expired certificate, while a highly salient but misleading DNS alert plausibly suggests a network outage. The agent that sees the DNS alert states its hypothesis first and with high confidence. In a fully connected debate, the other agents respond to and repeat that hypothesis; the group therefore becomes more mutually predictable, and its measured information gain, delayed mutual information, and synergy about the final diagnosis all move in the positive direction. Yet the early false signal anchors the discussion, consumes the communication budget, and produces a confident network-outage diagnosis. A compute-matched single agent that processes the same total evidence without the anchoring sequence identifies the expired certificate more often. This is a case where information gain increases while multi-agent performance gets worse.
+
 ## Abstract
 
 Multi-agent language-model systems (MAS) are often motivated by the expectation that multiple agents can pool information, specialize, cross-check one another, and outperform a single agent. Yet additional agents and communication can also introduce redundancy, correlated errors, anchoring, conflict, coordination overhead, and error cascades. Consequently, a system may exhibit strong internal dependence or information-theoretic synergy without achieving better task performance under a matched computation budget.
