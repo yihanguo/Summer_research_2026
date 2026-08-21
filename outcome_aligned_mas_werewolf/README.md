@@ -146,3 +146,30 @@ python analyze_temporal_coordination.py \
 
 The model registry pins the model revisions and records the effective served
 model in every manifest.
+
+## Parallel 64-cell production launcher
+
+`code/scripts/run_parallel_64.sh` runs the complete four-model, four-condition,
+four-seed design on an eight-GPU server. It assigns Llama, Mistral, and Phi to
+one GPU each and Qwen to two GPUs, starts one endpoint per family, and launches
+all 16 independent cells per endpoint. vLLM can therefore batch concurrent
+requests while every episode retains its own condition/seed directory, log,
+PID, and control metadata.
+
+Before launching any episode, the script requires the exact model ID from each
+`/v1/models` endpoint and a successful real chat completion from all four
+models. `run_open_model_matrix.py --control-dir` keeps the 64 shard status files
+separate while sharing one episode root. At completion, the supervisor checks
+all 64 artifact contracts and runs the outcome and temporal-coordination
+analyses.
+
+The August 21 production run was launched on `chili01` under:
+
+```text
+/home/yg108/outcome_aligned_mas_runs/parallel64_20260821T192500Z
+```
+
+It passed 49 unit/invariant tests, a 16-cell deterministic matrix, the loopback
+HTTP contract, four live model smokes, and three delayed launch audits. The
+production result directory is intentionally not included in this snapshot
+while the episodes are still running.

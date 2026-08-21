@@ -99,6 +99,15 @@ def main() -> int:
     )
     parser.add_argument("--seeds", nargs="+", type=int, default=list(default_seed_grid()))
     parser.add_argument("--output-dir", default="runs_open_models")
+    parser.add_argument(
+        "--control-dir",
+        default=None,
+        help=(
+            "Optional directory for matrix_spec.json, failures.json, and "
+            "matrix_status.json. Episode artifacts still use --output-dir. "
+            "Set this for independent parallel shards sharing one output root."
+        ),
+    )
     parser.add_argument("--base-url", default="http://127.0.0.1:8080/v1")
     parser.add_argument("--threads", type=int, default=1)
     parser.add_argument("--attempts", type=int, default=2)
@@ -115,6 +124,9 @@ def main() -> int:
 
     root = Path(args.output_dir).resolve()
     run_root = root / model["alias"]
+    control_root = (
+        Path(args.control_dir).resolve() if args.control_dir else run_root
+    )
     specification = {
         "created_utc": datetime.now(timezone.utc).isoformat(),
         "model_alias": model["alias"],
@@ -138,9 +150,9 @@ def main() -> int:
         "base_url": args.base_url,
         "git": git_state(),
     }
-    write_json(run_root / "matrix_spec.json", specification)
+    write_json(control_root / "matrix_spec.json", specification)
     if args.preflight_only:
-        print(run_root / "matrix_spec.json")
+        print(control_root / "matrix_spec.json")
         return 0
 
     require_expected_server_model(model, args.base_url)
@@ -198,12 +210,12 @@ def main() -> int:
                     "reason": reason,
                 }
             )
-            write_json(run_root / "failures.json", failures)
+            write_json(control_root / "failures.json", failures)
 
-    write_json(run_root / "failures.json", failures)
+    write_json(control_root / "failures.json", failures)
     completed = len(jobs) - len(failures)
     write_json(
-        run_root / "matrix_status.json",
+        control_root / "matrix_status.json",
         {
             "completed_utc": datetime.now(timezone.utc).isoformat(),
             "requested": len(jobs),

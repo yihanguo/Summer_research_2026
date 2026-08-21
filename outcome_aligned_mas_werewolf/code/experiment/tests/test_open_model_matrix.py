@@ -1,10 +1,14 @@
 import json
 import os
+import sys
+import tempfile
 import unittest
+from pathlib import Path
 from unittest.mock import patch
 
 from run_open_model_matrix import (
     configure_vllm_client,
+    main,
     require_expected_server_model,
 )
 
@@ -69,6 +73,30 @@ class OpenModelMatrixRoutingTest(unittest.TestCase):
                 require_expected_server_model(
                     model, "http://127.0.0.1:18080/v1"
                 )
+
+    def test_parallel_shard_control_files_do_not_touch_episode_root(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            output = root / "episodes"
+            control = root / "control" / "llama31_8b" / "pp" / "seed_1"
+            argv = [
+                "run_open_model_matrix.py",
+                "--model",
+                "llama31_8b",
+                "--conditions",
+                "pp",
+                "--seeds",
+                "1",
+                "--output-dir",
+                str(output),
+                "--control-dir",
+                str(control),
+                "--preflight-only",
+            ]
+            with patch.object(sys, "argv", argv):
+                self.assertEqual(main(), 0)
+            self.assertTrue((control / "matrix_spec.json").exists())
+            self.assertFalse((output / "llama31_8b" / "matrix_spec.json").exists())
 
 
 if __name__ == "__main__":
