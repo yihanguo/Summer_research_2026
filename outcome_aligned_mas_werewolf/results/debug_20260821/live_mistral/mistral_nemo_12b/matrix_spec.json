@@ -1,0 +1,54 @@
+{
+  "base_url": "http://127.0.0.1:18080/v1",
+  "conditions": [
+    {
+      "condition_id": "++",
+      "condition_slug": "pp",
+      "evidence_mode": "system_full_complementary",
+      "good_intervention": true,
+      "good_policy": "full_disclosure",
+      "legacy_id": "C3",
+      "wolf_intervention": true,
+      "wolf_policy": "truth_restricted"
+    }
+  ],
+  "created_utc": "2026-08-21T18:09:17.259687+00:00",
+  "git": {
+    "commit": "df818b6886e9e4147dce2805c5408a4d166e730b",
+    "dirty": true
+  },
+  "jobs": 1,
+  "model": {
+    "alias": "mistral_nemo_12b",
+    "artifact_gib": 6.43,
+    "backend": "vllm",
+    "base_url": "http://127.0.0.1:18080/v1",
+    "context_limit": 4096,
+    "endpoint_model": "mistralai/Mistral-Nemo-Instruct-2407",
+    "endpoint_quantization": "bfloat16",
+    "endpoint_revision": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+    "family": "Mistral",
+    "local_model_id": "mlx-community/Mistral-Nemo-Instruct-2407-4bit",
+    "local_revision": "647ca0751669b21a364c86ccc5df54c4d7e4e91c",
+    "max_output_tokens": 512,
+    "quantization": "4-bit MLX",
+    "reasoning_mode": "none",
+    "recommended_min_memory_gib": 16,
+    "source_model_id": "mistralai/Mistral-Nemo-Instruct-2407",
+    "source_revision": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+    "supports_response_format": true,
+    "supports_seed": true,
+    "vllm": {
+      "dtype": "bfloat16",
+      "gpu_memory_utilization": 0.85,
+      "max_model_len": 4096,
+      "tensor_parallel_size": 1,
+      "trust_remote_code": false
+    }
+  },
+  "model_alias": "mistral_nemo_12b",
+  "seeds": [
+    10001
+  ],
+  "threads": 1
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "default_seed_grid": [1, 101, 1001, 10001],
+  "models": {
+    "llama31_8b": {
+      "family": "Llama",
+      "source_model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+      "source_revision": "d10aef7999a2b5ba950ab3974312feeedbfe0b77",
+      "upstream_model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "upstream_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "mirror_verification": "All four safetensor byte sizes and SHA-256 hashes match the pinned upstream revision.",
+      "local_model_id": "mlx-community/Meta-Llama-3.1-8B-Instruct-4bit",
+      "local_revision": "241a666dad6cb93c8ff213d39a7f34a36bf26db4",
+      "quantization": "4-bit MLX",
+      "artifact_gib": 4.22,
+      "recommended_min_memory_gib": 8,
+      "base_url": "http://127.0.0.1:8080/v1",
+      "context_limit": 4096,
+      "max_output_tokens": 512,
+      "supports_response_format": true,
+      "supports_seed": true,
+      "reasoning_mode": "none"
+      ,"vllm": {
+        "tensor_parallel_size": 1,
+        "dtype": "bfloat16",
+        "gpu_memory_utilization": 0.85,
+        "max_model_len": 4096,
+        "trust_remote_code": false
+      }
+    },
+    "qwen3_30b_a3b": {
+      "family": "Qwen",
+      "source_model_id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "source_revision": "0d7cf23991f47feeb3a57ecb4c9cee8ea4a17bfe",
+      "local_model_id": "mlx-community/Qwen3-30B-A3B-Instruct-2507-4bit",
+      "local_revision": "e9675aa3ca5f900ccef55267914466d55ab325fa",
+      "quantization": "4-bit MLX",
+      "artifact_gib": 16.01,
+      "recommended_min_memory_gib": 24,
+      "base_url": "http://127.0.0.1:8080/v1",
+      "context_limit": 4096,
+      "max_output_tokens": 512,
+      "supports_response_format": true,
+      "supports_seed": true,
+      "reasoning_mode": "non-thinking"
+      ,"vllm": {
+        "tensor_parallel_size": 2,
+        "dtype": "bfloat16",
+        "gpu_memory_utilization": 0.85,
+        "max_model_len": 4096,
+        "trust_remote_code": false
+      }
+    },
+    "mistral_nemo_12b": {
+      "family": "Mistral",
+      "source_model_id": "mistralai/Mistral-Nemo-Instruct-2407",
+      "source_revision": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+      "local_model_id": "mlx-community/Mistral-Nemo-Instruct-2407-4bit",
+      "local_revision": "647ca0751669b21a364c86ccc5df54c4d7e4e91c",
+      "quantization": "4-bit MLX",
+      "artifact_gib": 6.43,
+      "recommended_min_memory_gib": 16,
+      "base_url": "http://127.0.0.1:8080/v1",
+      "context_limit": 4096,
+      "max_output_tokens": 512,
+      "supports_response_format": true,
+      "supports_seed": true,
+      "reasoning_mode": "none"
+      ,"vllm": {
+        "tensor_parallel_size": 1,
+        "dtype": "bfloat16",
+        "gpu_memory_utilization": 0.85,
+        "max_model_len": 4096,
+        "trust_remote_code": false
+      }
+    },
+    "phi3_medium_14b": {
+      "family": "Phi",
+      "source_model_id": "microsoft/Phi-3-medium-128k-instruct",
+      "source_revision": "a088b37c71d441ab6d862bb3fcfe6165b3014702",
+      "local_model_id": "mlx-community/Phi-3-medium-128k-instruct-4bit",
+      "local_revision": "9cffe737ae8c598cf3fca728b8417132754043f8",
+      "quantization": "4-bit MLX",
+      "artifact_gib": 7.32,
+      "recommended_min_memory_gib": 16,
+      "base_url": "http://127.0.0.1:8080/v1",
+      "context_limit": 4096,
+      "max_output_tokens": 512,
+      "supports_response_format": true,
+      "supports_seed": true,
+      "reasoning_mode": "none"
+      ,"vllm": {
+        "tensor_parallel_size": 1,
+        "dtype": "bfloat16",
+        "gpu_memory_utilization": 0.85,
+        "max_model_len": 4096,
+        "trust_remote_code": true
+      }
+    }
+  }
+}

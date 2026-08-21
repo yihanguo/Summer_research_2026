@@ -1,0 +1,3 @@
+model_alias,model_family,condition_id,coalition,episodes,transitions,repair_excluded_transitions,pair_count,median_pairwise_synergy_bits,null_corrected_pairwise_synergy_bits,pairwise_synergy_p,s_macro_bits,null_corrected_s_macro_bits,s_macro_p
+mistral_nemo_12b,Mistral,++,good,1,28,0,10,0.16666666666666652,0.05751503563678287,0.2727272727272727,-6.90913801284727,1.0974805681085993,0.18181818181818182
+mistral_nemo_12b,Mistral,++,all,1,28,0,21,0.11589687492273315,0.0933274907225422,0.18181818181818182,-11.531642637897288,1.2281208292660182,0.18181818181818182

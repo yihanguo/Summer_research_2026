@@ -1,0 +1,8 @@
+{
+  "max_debate_turns": 8,
+  "synthetic_votes": false,
+  "threads": 1,
+  "temperature_policy": "arena_action_default",
+  "max_output_tokens": 512,
+  "seed_grid": [1, 101, 1001, 10001]
+}

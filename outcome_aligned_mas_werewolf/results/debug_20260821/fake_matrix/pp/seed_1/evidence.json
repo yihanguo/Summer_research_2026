@@ -1,0 +1,46 @@
+[
+  {
+    "claim_text": "The night-event timing conflicts with one candidate's reported account.",
+    "direction": 1,
+    "directness": "direct",
+    "evidence_id": "E01",
+    "holder": "Derek",
+    "source_type": "night-event",
+    "strength": 0.5,
+    "target_hypothesis": "Tyler",
+    "truth_value": true
+  },
+  {
+    "claim_text": "The vote pattern contains a reversal immediately after a challenge.",
+    "direction": 1,
+    "directness": "direct",
+    "evidence_id": "E02",
+    "holder": "Scott",
+    "source_type": "vote-pattern",
+    "strength": 0.6,
+    "target_hypothesis": "Tyler",
+    "truth_value": true
+  },
+  {
+    "claim_text": "Role constraints leave one candidate consistent with the observed event sequence.",
+    "direction": 1,
+    "directness": "derived",
+    "evidence_id": "E03",
+    "holder": "Jacob",
+    "source_type": "role-constraint",
+    "strength": 0.7,
+    "target_hypothesis": "Tyler",
+    "truth_value": true
+  },
+  {
+    "claim_text": "Two independent observations agree about the same candidate's timeline.",
+    "direction": 1,
+    "directness": "direct",
+    "evidence_id": "E04",
+    "holder": "Derek",
+    "source_type": "observation",
+    "strength": 0.8,
+    "target_hypothesis": "Tyler",
+    "truth_value": true
+  }
+]

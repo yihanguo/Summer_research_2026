@@ -1,0 +1,93 @@
+{
+  "completed": [
+    {
+      "condition_id": "++",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/pp/seed_1",
+      "seed": 1
+    },
+    {
+      "condition_id": "+-",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/pm/seed_1",
+      "seed": 1
+    },
+    {
+      "condition_id": "-+",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/mp/seed_1",
+      "seed": 1
+    },
+    {
+      "condition_id": "--",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/mm/seed_1",
+      "seed": 1
+    },
+    {
+      "condition_id": "++",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/pp/seed_101",
+      "seed": 101
+    },
+    {
+      "condition_id": "+-",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/pm/seed_101",
+      "seed": 101
+    },
+    {
+      "condition_id": "-+",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/mp/seed_101",
+      "seed": 101
+    },
+    {
+      "condition_id": "--",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/mm/seed_101",
+      "seed": 101
+    },
+    {
+      "condition_id": "++",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/pp/seed_1001",
+      "seed": 1001
+    },
+    {
+      "condition_id": "+-",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/pm/seed_1001",
+      "seed": 1001
+    },
+    {
+      "condition_id": "-+",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/mp/seed_1001",
+      "seed": 1001
+    },
+    {
+      "condition_id": "--",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/mm/seed_1001",
+      "seed": 1001
+    },
+    {
+      "condition_id": "++",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/pp/seed_10001",
+      "seed": 10001
+    },
+    {
+      "condition_id": "+-",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/pm/seed_10001",
+      "seed": 10001
+    },
+    {
+      "condition_id": "-+",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/mp/seed_10001",
+      "seed": 10001
+    },
+    {
+      "condition_id": "--",
+      "output": "/home/yg108/outcome_aligned_mas_validation/debug_20260821/fake_matrix/mm/seed_10001",
+      "seed": 10001
+    }
+  ],
+  "conditions": 4,
+  "episodes": 16,
+  "seeds": [
+    1,
+    101,
+    1001,
+    10001
+  ],
+  "status": "passed"
+}

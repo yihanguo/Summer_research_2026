@@ -1,0 +1,83 @@
+{
+  "condition_id": "++",
+  "seed": 10001,
+  "role_assignment": {
+    "Tyler": "Villager",
+    "Paul": "Villager",
+    "Mason": "Villager",
+    "Bert": "Villager",
+    "Sam": "Werewolf",
+    "Harold": "Werewolf",
+    "Scott": "Doctor",
+    "Jacob": "Seer"
+  },
+  "player_names": [
+    "Tyler",
+    "Paul",
+    "Mason",
+    "Bert",
+    "Sam",
+    "Harold",
+    "Scott",
+    "Jacob"
+  ],
+  "evidence_mode": "system_full_complementary",
+  "good_policy": "full_disclosure",
+  "wolf_policy": "truth_restricted",
+  "public_broadcast": true,
+  "max_debate_turns": 8,
+  "synthetic_votes": false,
+  "round_extraction": true,
+  "extraction_schema_version": "v1",
+  "belief_snapshot_schema_version": "v2",
+  "complete_belief_panel_each_turn": true,
+  "model_ids": {
+    "villager": "local:mistral_nemo_12b",
+    "werewolf": "local:mistral_nemo_12b"
+  },
+  "condition_slug": "pp",
+  "legacy_condition_id": "C3",
+  "good_intervention": true,
+  "wolf_intervention": true,
+  "evidence_available": true,
+  "model_metadata": {
+    "villager": {
+      "provider": "openai_compatible_local",
+      "alias": "mistral_nemo_12b",
+      "family": "Mistral",
+      "source_model_id": "mistralai/Mistral-Nemo-Instruct-2407",
+      "source_revision": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+      "served_model_id": "mistralai/Mistral-Nemo-Instruct-2407",
+      "served_model_revision": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+      "quantization": "bfloat16",
+      "backend": "vllm",
+      "base_url": "http://127.0.0.1:18080/v1",
+      "context_limit": 4096,
+      "reasoning_mode": "none",
+      "server_version": "0.27.1"
+    },
+    "werewolf": {
+      "provider": "openai_compatible_local",
+      "alias": "mistral_nemo_12b",
+      "family": "Mistral",
+      "source_model_id": "mistralai/Mistral-Nemo-Instruct-2407",
+      "source_revision": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+      "served_model_id": "mistralai/Mistral-Nemo-Instruct-2407",
+      "served_model_revision": "04d8a90549d23fc6bd7f642064003592df51e9b3",
+      "quantization": "bfloat16",
+      "backend": "vllm",
+      "base_url": "http://127.0.0.1:18080/v1",
+      "context_limit": 4096,
+      "reasoning_mode": "none",
+      "server_version": "0.27.1"
+    }
+  },
+  "generation_parameters": {
+    "experiment_seed": 10001,
+    "threads": 1,
+    "max_debate_turns": 8,
+    "synthetic_votes": false
+  },
+  "git_commit": "df818b6886e9e4147dce2805c5408a4d166e730b",
+  "git_dirty": true
+}

@@ -1,0 +1,29 @@
+{
+  "anchoring_index": 0.5,
+  "belief_snapshot_count": 160,
+  "belief_snapshot_repair_count": 0,
+  "belief_snapshot_repair_rate": 0.0,
+  "correct_wolf_exile": 0,
+  "cross_round_reuse": 0.0,
+  "day_exiles": [
+    "Harold",
+    "Scott",
+    "Mason"
+  ],
+  "days_played": 4,
+  "echo_rate": 0.0,
+  "episode_status": "completed",
+  "evidence_correctness": 0.2,
+  "evidence_coverage": 0.25,
+  "extraction_coverage": 0.2,
+  "extraction_fidelity": 1.0,
+  "final_exile": "Mason",
+  "game_winner": "Werewolves",
+  "good_exile_count": 2,
+  "good_team_win": 0,
+  "public_message_repair_count": 4,
+  "public_message_repair_rate": 0.125,
+  "u_day": -1,
+  "wolf_exile_count": 1,
+  "wrong_good_exile": 1
+}

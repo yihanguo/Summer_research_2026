@@ -1,0 +1,9 @@
+model_alias,model_family,condition_id,coalition,episodes,transitions,repair_excluded_transitions,pair_count,median_pairwise_synergy_bits,null_corrected_pairwise_synergy_bits,pairwise_synergy_p,s_macro_bits,null_corrected_s_macro_bits,s_macro_p
+unknown,unknown,++,good,4,12,0,15,0.0,0.0,1.0,-5.5097750043269365,-4.347067498701918,1.0
+unknown,unknown,++,all,4,12,0,28,0.0,-6.661338147750939e-17,1.0,-7.346366672435915,-6.128119997692298,1.0
+unknown,unknown,+-,good,4,12,0,15,0.0,-2.2204460492503132e-17,1.0,-5.5097750043269365,-4.347067498701918,1.0
+unknown,unknown,+-,all,4,12,0,28,0.0,-1.1102230246251566e-17,1.0,-7.346366672435915,-5.594786664358965,1.0
+unknown,unknown,-+,good,4,12,0,15,0.0,-2.2204460492503132e-17,1.0,-5.5097750043269365,-4.347067498701918,1.0
+unknown,unknown,-+,all,4,12,0,28,0.0,-1.1102230246251566e-17,1.0,-7.346366672435915,-5.594786664358965,1.0
+unknown,unknown,--,good,4,12,0,15,0.0,0.0,1.0,0.0,0.0,1.0
+unknown,unknown,--,all,4,12,0,28,0.0,0.0,1.0,0.0,0.0,1.0

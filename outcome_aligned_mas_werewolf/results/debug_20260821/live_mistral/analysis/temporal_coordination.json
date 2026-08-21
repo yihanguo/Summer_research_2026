@@ -1,0 +1,429 @@
+{
+  "cells": [
+    {
+      "coalition": "good",
+      "condition_id": "++",
+      "episodes": 1,
+      "lag": 1,
+      "macro_criterion": {
+        "individual_information_bits": {
+          "Bert": 0.5916727785823275,
+          "Jacob": 1.7142778533726888,
+          "Mason": 2.3598790287368607,
+          "Paul": 2.547204475088165,
+          "Scott": 2.1718797807268224
+        },
+        "macro_predictive_information_bits": 2.4757759036595943,
+        "s_macro_bits": -6.90913801284727,
+        "samples": 28,
+        "sum_individual_information_bits": 9.384913916506864
+      },
+      "model_alias": "mistral_nemo_12b",
+      "model_family": "Mistral",
+      "pairwise_pid": {
+        "mean_synergy_bits": 0.16255516310574125,
+        "median_synergy_bits": 0.16666666666666652,
+        "pair_count": 10,
+        "pairs": {
+          "Bert|Jacob": {
+            "individual_i_bits": 2.5216406363433186,
+            "individual_j_bits": 1.8423709931771084,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 1.6995138503199656,
+            "samples": 7,
+            "synergy_bits": 0.1428571428571428,
+            "unique_i_bits": 0.822126786023353,
+            "unique_j_bits": 0.1428571428571428
+          },
+          "Bert|Mason": {
+            "individual_i_bits": 2.5216406363433186,
+            "individual_j_bits": 2.521640636343318,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 2.235926350629032,
+            "samples": 7,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.2857142857142865,
+            "unique_j_bits": 0.28571428571428603
+          },
+          "Bert|Paul": {
+            "individual_i_bits": 2.5216406363433186,
+            "individual_j_bits": 2.807354922057604,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 2.5216406363433186,
+            "samples": 7,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.2857142857142856
+          },
+          "Bert|Scott": {
+            "individual_i_bits": 2.2359263506290326,
+            "individual_j_bits": 2.2359263506290326,
+            "joint_information_bits": 2.521640636343318,
+            "redundancy_bits": 1.950212064914747,
+            "samples": 7,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.2857142857142856,
+            "unique_j_bits": 0.2857142857142856
+          },
+          "Jacob|Mason": {
+            "individual_i_bits": 1.9359455691847656,
+            "individual_j_bits": 2.7918583525674836,
+            "joint_information_bits": 3.191399282356206,
+            "redundancy_bits": 1.8560373832270205,
+            "samples": 21,
+            "synergy_bits": 0.3196327438309774,
+            "unique_i_bits": 0.07990818595774507,
+            "unique_j_bits": 0.9358209693404631
+          },
+          "Jacob|Paul": {
+            "individual_i_bits": 2.1311772582376167,
+            "individual_j_bits": 3.2368573034220742,
+            "joint_information_bits": 3.427333493898265,
+            "redundancy_bits": 2.1311772582376163,
+            "samples": 21,
+            "synergy_bits": 0.19047619047619024,
+            "unique_i_bits": 4.440892098500626e-16,
+            "unique_j_bits": 1.105680045184458
+          },
+          "Jacob|Scott": {
+            "individual_i_bits": 2.162368783573502,
+            "individual_j_bits": 3.0368701157925626,
+            "joint_information_bits": 3.1728107335198645,
+            "redundancy_bits": 2.114749735954454,
+            "samples": 21,
+            "synergy_bits": 0.08832157010825403,
+            "unique_i_bits": 0.047619047619047894,
+            "unique_j_bits": 0.9221203798381086
+          },
+          "Mason|Paul": {
+            "individual_i_bits": 3.324862957617357,
+            "individual_j_bits": 3.655045546825804,
+            "joint_information_bits": 4.137537511266052,
+            "redundancy_bits": 3.1846910824885786,
+            "samples": 28,
+            "synergy_bits": 0.3423200893114693,
+            "unique_i_bits": 0.14017187512877838,
+            "unique_j_bits": 0.4703544643372255
+          },
+          "Mason|Scott": {
+            "individual_i_bits": 2.83256087505669,
+            "individual_j_bits": 3.232101804845414,
+            "joint_information_bits": 3.8442328987631926,
+            "redundancy_bits": 2.5161867707817036,
+            "samples": 21,
+            "synergy_bits": 0.29575698964279207,
+            "unique_i_bits": 0.3163741042749866,
+            "unique_j_bits": 0.7159150340637104
+          },
+          "Paul|Scott": {
+            "individual_i_bits": 3.6897037321995474,
+            "individual_j_bits": 3.4585250192341506,
+            "joint_information_bits": 4.20184123230257,
+            "redundancy_bits": 3.1925744239617146,
+            "samples": 21,
+            "synergy_bits": 0.2461869048305867,
+            "unique_i_bits": 0.49712930823783275,
+            "unique_j_bits": 0.2659505952724359
+          }
+        }
+      },
+      "repair_excluded_transitions": 0,
+      "seeds": [
+        10001
+      ],
+      "temporal_null": {
+        "macro_null_corrected_bits": 1.0974805681085993,
+        "macro_null_mean_bits": -8.00661858095587,
+        "macro_null_median_bits": -8.303084066453943,
+        "macro_p_ge_observed": 0.18181818181818182,
+        "pairwise_synergy_null_corrected_bits": 0.05751503563678287,
+        "pairwise_synergy_null_mean_bits": 0.10915163102988365,
+        "pairwise_synergy_null_median_bits": 0.09218716502664792,
+        "pairwise_synergy_p_ge_observed": 0.2727272727272727,
+        "permutations": 10
+      },
+      "transitions": 28,
+      "transitions_including_repairs": 28
+    },
+    {
+      "coalition": "all",
+      "condition_id": "++",
+      "episodes": 1,
+      "lag": 1,
+      "macro_criterion": {
+        "individual_information_bits": {
+          "Bert": 0.863120568566631,
+          "Harold": 1.1488348542809166,
+          "Jacob": 1.77666090404446,
+          "Mason": 2.4780948881692613,
+          "Paul": 2.736848905949136,
+          "Sam": 2.8491791569393734,
+          "Scott": 2.388791997962238
+        },
+        "macro_predictive_information_bits": 2.7098886380147276,
+        "s_macro_bits": -11.531642637897288,
+        "samples": 28,
+        "sum_individual_information_bits": 14.241531275912017
+      },
+      "model_alias": "mistral_nemo_12b",
+      "model_family": "Mistral",
+      "pairwise_pid": {
+        "mean_synergy_bits": 0.13042878696729301,
+        "median_synergy_bits": 0.11589687492273315,
+        "pair_count": 21,
+        "pairs": {
+          "Bert|Harold": {
+            "individual_i_bits": 2.5216406363433186,
+            "individual_j_bits": 2.521640636343318,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 2.2359263506290326,
+            "samples": 7,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.28571428571428603,
+            "unique_j_bits": 0.2857142857142856
+          },
+          "Bert|Jacob": {
+            "individual_i_bits": 2.5216406363433186,
+            "individual_j_bits": 1.8423709931771084,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 1.6995138503199656,
+            "samples": 7,
+            "synergy_bits": 0.1428571428571428,
+            "unique_i_bits": 0.822126786023353,
+            "unique_j_bits": 0.1428571428571428
+          },
+          "Bert|Mason": {
+            "individual_i_bits": 2.5216406363433186,
+            "individual_j_bits": 2.521640636343318,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 2.235926350629032,
+            "samples": 7,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.2857142857142865,
+            "unique_j_bits": 0.28571428571428603
+          },
+          "Bert|Paul": {
+            "individual_i_bits": 2.5216406363433186,
+            "individual_j_bits": 2.807354922057604,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 2.5216406363433186,
+            "samples": 7,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.2857142857142856
+          },
+          "Bert|Sam": {
+            "individual_i_bits": 2.5216406363433186,
+            "individual_j_bits": 2.807354922057604,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 2.5216406363433186,
+            "samples": 7,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.2857142857142856
+          },
+          "Bert|Scott": {
+            "individual_i_bits": 2.2359263506290326,
+            "individual_j_bits": 2.2359263506290326,
+            "joint_information_bits": 2.521640636343318,
+            "redundancy_bits": 1.950212064914747,
+            "samples": 7,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.2857142857142856,
+            "unique_j_bits": 0.2857142857142856
+          },
+          "Harold|Jacob": {
+            "individual_i_bits": 2.521640636343318,
+            "individual_j_bits": 1.8423709931771084,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 1.8423709931771084,
+            "samples": 7,
+            "synergy_bits": 0.28571428571428603,
+            "unique_i_bits": 0.6792696431662097,
+            "unique_j_bits": 0.0
+          },
+          "Harold|Mason": {
+            "individual_i_bits": 2.521640636343318,
+            "individual_j_bits": 2.521640636343318,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 2.3787834934861753,
+            "samples": 7,
+            "synergy_bits": 0.14285714285714324,
+            "unique_i_bits": 0.1428571428571428,
+            "unique_j_bits": 0.1428571428571428
+          },
+          "Harold|Paul": {
+            "individual_i_bits": 2.521640636343318,
+            "individual_j_bits": 2.807354922057604,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 2.521640636343318,
+            "samples": 7,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.28571428571428603
+          },
+          "Harold|Sam": {
+            "individual_i_bits": 2.521640636343318,
+            "individual_j_bits": 2.807354922057604,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 2.521640636343318,
+            "samples": 7,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.28571428571428603
+          },
+          "Harold|Scott": {
+            "individual_i_bits": 2.521640636343318,
+            "individual_j_bits": 2.521640636343318,
+            "joint_information_bits": 2.807354922057604,
+            "redundancy_bits": 2.3787834934861753,
+            "samples": 7,
+            "synergy_bits": 0.14285714285714324,
+            "unique_i_bits": 0.1428571428571428,
+            "unique_j_bits": 0.1428571428571428
+          },
+          "Jacob|Mason": {
+            "individual_i_bits": 1.9359455691847656,
+            "individual_j_bits": 2.7918583525674836,
+            "joint_information_bits": 3.191399282356206,
+            "redundancy_bits": 1.8560373832270205,
+            "samples": 21,
+            "synergy_bits": 0.3196327438309774,
+            "unique_i_bits": 0.07990818595774507,
+            "unique_j_bits": 0.9358209693404631
+          },
+          "Jacob|Paul": {
+            "individual_i_bits": 2.1311772582376167,
+            "individual_j_bits": 3.2368573034220742,
+            "joint_information_bits": 3.427333493898265,
+            "redundancy_bits": 2.1311772582376163,
+            "samples": 21,
+            "synergy_bits": 0.19047619047619024,
+            "unique_i_bits": 4.440892098500626e-16,
+            "unique_j_bits": 1.105680045184458
+          },
+          "Jacob|Sam": {
+            "individual_i_bits": 2.1311772582376163,
+            "individual_j_bits": 3.1009166856947714,
+            "joint_information_bits": 3.1009166856947714,
+            "redundancy_bits": 2.1311772582376163,
+            "samples": 21,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.9697394274571551
+          },
+          "Jacob|Scott": {
+            "individual_i_bits": 2.162368783573502,
+            "individual_j_bits": 3.0368701157925626,
+            "joint_information_bits": 3.1728107335198645,
+            "redundancy_bits": 2.114749735954454,
+            "samples": 21,
+            "synergy_bits": 0.08832157010825403,
+            "unique_i_bits": 0.047619047619047894,
+            "unique_j_bits": 0.9221203798381086
+          },
+          "Mason|Paul": {
+            "individual_i_bits": 3.324862957617357,
+            "individual_j_bits": 3.655045546825804,
+            "joint_information_bits": 4.137537511266052,
+            "redundancy_bits": 3.1846910824885786,
+            "samples": 28,
+            "synergy_bits": 0.3423200893114693,
+            "unique_i_bits": 0.14017187512877838,
+            "unique_j_bits": 0.4703544643372255
+          },
+          "Mason|Sam": {
+            "individual_i_bits": 3.3962915290459272,
+            "individual_j_bits": 4.178439190827717,
+            "joint_information_bits": 4.521640636343317,
+            "redundancy_bits": 3.147513518879424,
+            "samples": 28,
+            "synergy_bits": 0.0944234353490967,
+            "unique_i_bits": 0.24877801016650336,
+            "unique_j_bits": 1.0309256719482933
+          },
+          "Mason|Scott": {
+            "individual_i_bits": 2.83256087505669,
+            "individual_j_bits": 3.232101804845414,
+            "joint_information_bits": 3.8442328987631926,
+            "redundancy_bits": 2.5161867707817036,
+            "samples": 21,
+            "synergy_bits": 0.29575698964279207,
+            "unique_i_bits": 0.3163741042749866,
+            "unique_j_bits": 0.7159150340637104
+          },
+          "Paul|Sam": {
+            "individual_i_bits": 3.8693312611115185,
+            "individual_j_bits": 4.080050351464736,
+            "joint_information_bits": 4.396291529045927,
+            "redundancy_bits": 3.668986958453061,
+            "samples": 28,
+            "synergy_bits": 0.11589687492273315,
+            "unique_i_bits": 0.20034430265845726,
+            "unique_j_bits": 0.41106339301167516
+          },
+          "Paul|Scott": {
+            "individual_i_bits": 3.6897037321995474,
+            "individual_j_bits": 3.4585250192341506,
+            "joint_information_bits": 4.20184123230257,
+            "redundancy_bits": 3.1925744239617146,
+            "samples": 21,
+            "synergy_bits": 0.2461869048305867,
+            "unique_i_bits": 0.49712930823783275,
+            "unique_j_bits": 0.2659505952724359
+          },
+          "Sam|Scott": {
+            "individual_i_bits": 3.517816090559699,
+            "individual_j_bits": 3.422577995321604,
+            "joint_information_bits": 4.070656113151929,
+            "redundancy_bits": 3.201441986284712,
+            "samples": 21,
+            "synergy_bits": 0.3317040135553384,
+            "unique_i_bits": 0.316374104274987,
+            "unique_j_bits": 0.22113600903689168
+          }
+        }
+      },
+      "repair_excluded_transitions": 0,
+      "seeds": [
+        10001
+      ],
+      "temporal_null": {
+        "macro_null_corrected_bits": 1.2281208292660182,
+        "macro_null_mean_bits": -12.759763467163307,
+        "macro_null_median_bits": -12.709625763441093,
+        "macro_p_ge_observed": 0.18181818181818182,
+        "pairwise_synergy_null_corrected_bits": 0.0933274907225422,
+        "pairwise_synergy_null_mean_bits": 0.022569384200190945,
+        "pairwise_synergy_null_median_bits": 0.0,
+        "pairwise_synergy_p_ge_observed": 0.18181818181818182,
+        "permutations": 10
+      },
+      "transitions": 28,
+      "transitions_including_repairs": 28
+    }
+  ],
+  "complete_episodes_with_belief_panels": 1,
+  "estimator": "Williams-Beer I_min PID and exact macro information contrast",
+  "lag": 1,
+  "permutations": 10,
+  "state_definition": {
+    "agent": [
+      "bid",
+      "top_suspect",
+      "suspect_confidence_bin",
+      "intended_vote",
+      "evidence_state",
+      "complete_suspect_levels"
+    ],
+    "good_coalition_note": "Roles select the offline coalition only; roles are not state variables.",
+    "hidden_roles_in_state": false,
+    "macro": [
+      "living_player_identities",
+      "per_candidate_median_suspicion_level",
+      "group_top_suspect",
+      "majority_consensus_bin"
+    ],
+    "repair_handling": "Primary PID and macro estimates exclude transitions where any coalition source was deterministically repaired at t or t+lag."
+  }
+}

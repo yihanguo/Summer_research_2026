@@ -1,0 +1,32 @@
+{
+  "belief_panels": 32,
+  "belief_repairs": 0,
+  "belief_snapshots": 160,
+  "cells": [
+    {
+      "coalition": "good",
+      "median_synergy_bits": 0.16666666666666652,
+      "pair_count": 10,
+      "s_macro_bits": -6.90913801284727,
+      "transitions": 28,
+      "transitions_including_repairs": 28
+    },
+    {
+      "coalition": "all",
+      "median_synergy_bits": 0.11589687492273315,
+      "pair_count": 21,
+      "s_macro_bits": -11.531642637897288,
+      "transitions": 28,
+      "transitions_including_repairs": 28
+    }
+  ],
+  "condition": "++",
+  "episode_status": "completed",
+  "public_messages": 32,
+  "public_repairs": 4,
+  "rounds": 4,
+  "seed": 10001,
+  "served_model": "mistralai/Mistral-Nemo-Instruct-2407",
+  "status": "passed",
+  "winner": "Werewolves"
+}

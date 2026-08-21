@@ -1,0 +1,2147 @@
+{
+  "cells": [
+    {
+      "coalition": "good",
+      "condition_id": "++",
+      "episodes": 4,
+      "lag": 1,
+      "macro_criterion": {
+        "individual_information_bits": {
+          "David": 0.9182958340544893,
+          "Derek": 0.9182958340544893,
+          "Hayley": 0.9182958340544893,
+          "Isaac": 0.9182958340544893,
+          "Jacob": 0.9182958340544893,
+          "Scott": 0.9182958340544893
+        },
+        "macro_predictive_information_bits": 0.0,
+        "s_macro_bits": -5.5097750043269365,
+        "samples": 12,
+        "sum_individual_information_bits": 5.5097750043269365
+      },
+      "model_alias": "unknown",
+      "model_family": "unknown",
+      "pairwise_pid": {
+        "mean_synergy_bits": 0.0,
+        "median_synergy_bits": 0.0,
+        "pair_count": 15,
+        "pairs": {
+          "David|Derek": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Jacob|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          }
+        }
+      },
+      "repair_excluded_transitions": 0,
+      "seeds": [
+        1,
+        101,
+        1001,
+        10001
+      ],
+      "temporal_null": {
+        "macro_null_corrected_bits": -4.347067498701918,
+        "macro_null_mean_bits": -1.1627075056250182,
+        "macro_null_median_bits": -1.509775004326937,
+        "macro_p_ge_observed": 1.0,
+        "pairwise_synergy_null_corrected_bits": 0.0,
+        "pairwise_synergy_null_mean_bits": 0.0,
+        "pairwise_synergy_null_median_bits": 0.0,
+        "pairwise_synergy_p_ge_observed": 1.0,
+        "permutations": 5
+      },
+      "transitions": 12,
+      "transitions_including_repairs": 12
+    },
+    {
+      "coalition": "all",
+      "condition_id": "++",
+      "episodes": 4,
+      "lag": 1,
+      "macro_criterion": {
+        "individual_information_bits": {
+          "David": 0.9182958340544893,
+          "Derek": 0.9182958340544893,
+          "Ginger": 0.9182958340544893,
+          "Hayley": 0.9182958340544893,
+          "Isaac": 0.9182958340544893,
+          "Jacob": 0.9182958340544893,
+          "Scott": 0.9182958340544893,
+          "Tyler": 0.9182958340544893
+        },
+        "macro_predictive_information_bits": 0.0,
+        "s_macro_bits": -7.346366672435915,
+        "samples": 12,
+        "sum_individual_information_bits": 7.346366672435915
+      },
+      "model_alias": "unknown",
+      "model_family": "unknown",
+      "pairwise_pid": {
+        "mean_synergy_bits": 0.0,
+        "median_synergy_bits": 0.0,
+        "pair_count": 28,
+        "pairs": {
+          "David|Derek": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Ginger": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Ginger": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Jacob|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Jacob|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Scott|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          }
+        }
+      },
+      "repair_excluded_transitions": 0,
+      "seeds": [
+        1,
+        101,
+        1001,
+        10001
+      ],
+      "temporal_null": {
+        "macro_null_corrected_bits": -6.128119997692298,
+        "macro_null_mean_bits": -1.2182466747436158,
+        "macro_null_median_bits": -0.35288334198720767,
+        "macro_p_ge_observed": 1.0,
+        "pairwise_synergy_null_corrected_bits": -6.661338147750939e-17,
+        "pairwise_synergy_null_mean_bits": 6.661338147750939e-17,
+        "pairwise_synergy_null_median_bits": 5.551115123125783e-17,
+        "pairwise_synergy_p_ge_observed": 1.0,
+        "permutations": 5
+      },
+      "transitions": 12,
+      "transitions_including_repairs": 12
+    },
+    {
+      "coalition": "good",
+      "condition_id": "+-",
+      "episodes": 4,
+      "lag": 1,
+      "macro_criterion": {
+        "individual_information_bits": {
+          "David": 0.9182958340544893,
+          "Derek": 0.9182958340544893,
+          "Hayley": 0.9182958340544893,
+          "Isaac": 0.9182958340544893,
+          "Jacob": 0.9182958340544893,
+          "Scott": 0.9182958340544893
+        },
+        "macro_predictive_information_bits": 0.0,
+        "s_macro_bits": -5.5097750043269365,
+        "samples": 12,
+        "sum_individual_information_bits": 5.5097750043269365
+      },
+      "model_alias": "unknown",
+      "model_family": "unknown",
+      "pairwise_pid": {
+        "mean_synergy_bits": 0.0,
+        "median_synergy_bits": 0.0,
+        "pair_count": 15,
+        "pairs": {
+          "David|Derek": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Jacob|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          }
+        }
+      },
+      "repair_excluded_transitions": 0,
+      "seeds": [
+        1,
+        101,
+        1001,
+        10001
+      ],
+      "temporal_null": {
+        "macro_null_corrected_bits": -4.347067498701918,
+        "macro_null_mean_bits": -1.1627075056250182,
+        "macro_null_median_bits": -1.509775004326937,
+        "macro_p_ge_observed": 1.0,
+        "pairwise_synergy_null_corrected_bits": -2.2204460492503132e-17,
+        "pairwise_synergy_null_mean_bits": 2.2204460492503132e-17,
+        "pairwise_synergy_null_median_bits": 0.0,
+        "pairwise_synergy_p_ge_observed": 1.0,
+        "permutations": 5
+      },
+      "transitions": 12,
+      "transitions_including_repairs": 12
+    },
+    {
+      "coalition": "all",
+      "condition_id": "+-",
+      "episodes": 4,
+      "lag": 1,
+      "macro_criterion": {
+        "individual_information_bits": {
+          "David": 0.9182958340544893,
+          "Derek": 0.9182958340544893,
+          "Ginger": 0.9182958340544893,
+          "Hayley": 0.9182958340544893,
+          "Isaac": 0.9182958340544893,
+          "Jacob": 0.9182958340544893,
+          "Scott": 0.9182958340544893,
+          "Tyler": 0.9182958340544893
+        },
+        "macro_predictive_information_bits": 0.0,
+        "s_macro_bits": -7.346366672435915,
+        "samples": 12,
+        "sum_individual_information_bits": 7.346366672435915
+      },
+      "model_alias": "unknown",
+      "model_family": "unknown",
+      "pairwise_pid": {
+        "mean_synergy_bits": 0.0,
+        "median_synergy_bits": 0.0,
+        "pair_count": 28,
+        "pairs": {
+          "David|Derek": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Ginger": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Ginger": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Jacob|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Jacob|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Scott|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          }
+        }
+      },
+      "repair_excluded_transitions": 0,
+      "seeds": [
+        1,
+        101,
+        1001,
+        10001
+      ],
+      "temporal_null": {
+        "macro_null_corrected_bits": -5.594786664358965,
+        "macro_null_mean_bits": -1.7515800080769492,
+        "macro_null_median_bits": -2.013033339102583,
+        "macro_p_ge_observed": 1.0,
+        "pairwise_synergy_null_corrected_bits": -1.1102230246251566e-17,
+        "pairwise_synergy_null_mean_bits": 1.1102230246251566e-17,
+        "pairwise_synergy_null_median_bits": 0.0,
+        "pairwise_synergy_p_ge_observed": 1.0,
+        "permutations": 5
+      },
+      "transitions": 12,
+      "transitions_including_repairs": 12
+    },
+    {
+      "coalition": "good",
+      "condition_id": "-+",
+      "episodes": 4,
+      "lag": 1,
+      "macro_criterion": {
+        "individual_information_bits": {
+          "David": 0.9182958340544893,
+          "Derek": 0.9182958340544893,
+          "Hayley": 0.9182958340544893,
+          "Isaac": 0.9182958340544893,
+          "Jacob": 0.9182958340544893,
+          "Scott": 0.9182958340544893
+        },
+        "macro_predictive_information_bits": 0.0,
+        "s_macro_bits": -5.5097750043269365,
+        "samples": 12,
+        "sum_individual_information_bits": 5.5097750043269365
+      },
+      "model_alias": "unknown",
+      "model_family": "unknown",
+      "pairwise_pid": {
+        "mean_synergy_bits": 0.0,
+        "median_synergy_bits": 0.0,
+        "pair_count": 15,
+        "pairs": {
+          "David|Derek": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Jacob|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          }
+        }
+      },
+      "repair_excluded_transitions": 0,
+      "seeds": [
+        1,
+        101,
+        1001,
+        10001
+      ],
+      "temporal_null": {
+        "macro_null_corrected_bits": -4.347067498701918,
+        "macro_null_mean_bits": -1.1627075056250182,
+        "macro_null_median_bits": -1.509775004326937,
+        "macro_p_ge_observed": 1.0,
+        "pairwise_synergy_null_corrected_bits": -2.2204460492503132e-17,
+        "pairwise_synergy_null_mean_bits": 2.2204460492503132e-17,
+        "pairwise_synergy_null_median_bits": 0.0,
+        "pairwise_synergy_p_ge_observed": 1.0,
+        "permutations": 5
+      },
+      "transitions": 12,
+      "transitions_including_repairs": 12
+    },
+    {
+      "coalition": "all",
+      "condition_id": "-+",
+      "episodes": 4,
+      "lag": 1,
+      "macro_criterion": {
+        "individual_information_bits": {
+          "David": 0.9182958340544893,
+          "Derek": 0.9182958340544893,
+          "Ginger": 0.9182958340544893,
+          "Hayley": 0.9182958340544893,
+          "Isaac": 0.9182958340544893,
+          "Jacob": 0.9182958340544893,
+          "Scott": 0.9182958340544893,
+          "Tyler": 0.9182958340544893
+        },
+        "macro_predictive_information_bits": 0.0,
+        "s_macro_bits": -7.346366672435915,
+        "samples": 12,
+        "sum_individual_information_bits": 7.346366672435915
+      },
+      "model_alias": "unknown",
+      "model_family": "unknown",
+      "pairwise_pid": {
+        "mean_synergy_bits": 0.0,
+        "median_synergy_bits": 0.0,
+        "pair_count": 28,
+        "pairs": {
+          "David|Derek": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Ginger": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Ginger": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Jacob|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Jacob|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Scott|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          }
+        }
+      },
+      "repair_excluded_transitions": 0,
+      "seeds": [
+        1,
+        101,
+        1001,
+        10001
+      ],
+      "temporal_null": {
+        "macro_null_corrected_bits": -5.594786664358965,
+        "macro_null_mean_bits": -1.7515800080769492,
+        "macro_null_median_bits": -2.013033339102583,
+        "macro_p_ge_observed": 1.0,
+        "pairwise_synergy_null_corrected_bits": -1.1102230246251566e-17,
+        "pairwise_synergy_null_mean_bits": 1.1102230246251566e-17,
+        "pairwise_synergy_null_median_bits": 0.0,
+        "pairwise_synergy_p_ge_observed": 1.0,
+        "permutations": 5
+      },
+      "transitions": 12,
+      "transitions_including_repairs": 12
+    },
+    {
+      "coalition": "good",
+      "condition_id": "--",
+      "episodes": 4,
+      "lag": 1,
+      "macro_criterion": {
+        "individual_information_bits": {
+          "David": 0.0,
+          "Derek": 0.0,
+          "Hayley": 0.0,
+          "Isaac": 0.0,
+          "Jacob": 0.0,
+          "Scott": 0.0
+        },
+        "macro_predictive_information_bits": 0.0,
+        "s_macro_bits": 0.0,
+        "samples": 12,
+        "sum_individual_information_bits": 0.0
+      },
+      "model_alias": "unknown",
+      "model_family": "unknown",
+      "pairwise_pid": {
+        "mean_synergy_bits": 0.0,
+        "median_synergy_bits": 0.0,
+        "pair_count": 15,
+        "pairs": {
+          "David|Derek": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Jacob|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          }
+        }
+      },
+      "repair_excluded_transitions": 0,
+      "seeds": [
+        1,
+        101,
+        1001,
+        10001
+      ],
+      "temporal_null": {
+        "macro_null_corrected_bits": 0.0,
+        "macro_null_mean_bits": 0.0,
+        "macro_null_median_bits": 0.0,
+        "macro_p_ge_observed": 1.0,
+        "pairwise_synergy_null_corrected_bits": 0.0,
+        "pairwise_synergy_null_mean_bits": 0.0,
+        "pairwise_synergy_null_median_bits": 0.0,
+        "pairwise_synergy_p_ge_observed": 1.0,
+        "permutations": 5
+      },
+      "transitions": 12,
+      "transitions_including_repairs": 12
+    },
+    {
+      "coalition": "all",
+      "condition_id": "--",
+      "episodes": 4,
+      "lag": 1,
+      "macro_criterion": {
+        "individual_information_bits": {
+          "David": 0.0,
+          "Derek": 0.0,
+          "Ginger": 0.0,
+          "Hayley": 0.0,
+          "Isaac": 0.0,
+          "Jacob": 0.0,
+          "Scott": 0.0,
+          "Tyler": 0.0
+        },
+        "macro_predictive_information_bits": 0.0,
+        "s_macro_bits": 0.0,
+        "samples": 12,
+        "sum_individual_information_bits": 0.0
+      },
+      "model_alias": "unknown",
+      "model_family": "unknown",
+      "pairwise_pid": {
+        "mean_synergy_bits": 0.0,
+        "median_synergy_bits": 0.0,
+        "pair_count": 28,
+        "pairs": {
+          "David|Derek": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Ginger": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "David|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Ginger": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Derek|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Hayley": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Ginger|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Isaac": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Hayley|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Jacob": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Isaac|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Jacob|Scott": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Jacob|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          },
+          "Scott|Tyler": {
+            "individual_i_bits": 1.5849625007211559,
+            "individual_j_bits": 1.5849625007211559,
+            "joint_information_bits": 1.5849625007211559,
+            "redundancy_bits": 1.5849625007211559,
+            "samples": 12,
+            "synergy_bits": 0.0,
+            "unique_i_bits": 0.0,
+            "unique_j_bits": 0.0
+          }
+        }
+      },
+      "repair_excluded_transitions": 0,
+      "seeds": [
+        1,
+        101,
+        1001,
+        10001
+      ],
+      "temporal_null": {
+        "macro_null_corrected_bits": 0.0,
+        "macro_null_mean_bits": 0.0,
+        "macro_null_median_bits": 0.0,
+        "macro_p_ge_observed": 1.0,
+        "pairwise_synergy_null_corrected_bits": 0.0,
+        "pairwise_synergy_null_mean_bits": 0.0,
+        "pairwise_synergy_null_median_bits": 0.0,
+        "pairwise_synergy_p_ge_observed": 1.0,
+        "permutations": 5
+      },
+      "transitions": 12,
+      "transitions_including_repairs": 12
+    }
+  ],
+  "complete_episodes_with_belief_panels": 16,
+  "estimator": "Williams-Beer I_min PID and exact macro information contrast",
+  "lag": 1,
+  "permutations": 5,
+  "state_definition": {
+    "agent": [
+      "bid",
+      "top_suspect",
+      "suspect_confidence_bin",
+      "intended_vote",
+      "evidence_state",
+      "complete_suspect_levels"
+    ],
+    "good_coalition_note": "Roles select the offline coalition only; roles are not state variables.",
+    "hidden_roles_in_state": false,
+    "macro": [
+      "living_player_identities",
+      "per_candidate_median_suspicion_level",
+      "group_top_suspect",
+      "majority_consensus_bin"
+    ],
+    "repair_handling": "Primary PID and macro estimates exclude transitions where any coalition source was deterministically repaired at t or t+lag."
+  }
+}
