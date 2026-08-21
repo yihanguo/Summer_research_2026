@@ -173,3 +173,13 @@ It passed 49 unit/invariant tests, a 16-cell deterministic matrix, the loopback
 HTTP contract, four live model smokes, and three delayed launch audits. The
 production result directory is intentionally not included in this snapshot
 while the episodes are still running.
+
+## Generalization research
+
+The following source-audited design documents extend the Werewolf temporal
+coordination framework to other domains without changing the PID or macro
+definitions:
+
+- [`research/MULTI_AGENT_TASK_GENERALIZATION_CANDIDATES.md`](research/MULTI_AGENT_TASK_GENERALIZATION_CANDIDATES.md): ten task families spanning coding, mathematics, databases, cybersecurity, games, embodied work, negotiation, and adjudication;
+- [`research/ALTERNATIVE_SYNERGY_STATE_DESIGNS.md`](research/ALTERNATIVE_SYNERGY_STATE_DESIGNS.md): four reusable individual-state and macrostate specifications;
+- [`research/SOURCE_AND_FIT_VALIDATION.md`](research/SOURCE_AND_FIT_VALIDATION.md): primary-source, framework-fit, and leakage/implementability validation.
